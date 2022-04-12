@@ -1,0 +1,6 @@
+module Pods_BMSwiftTools {
+  umbrella header "Pods-BMSwiftTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
