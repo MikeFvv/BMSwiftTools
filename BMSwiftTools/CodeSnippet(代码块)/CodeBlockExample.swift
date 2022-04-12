@@ -26,7 +26,75 @@ class CodeBlockExample {
     var arrya2: Array<Int> = [1, 2, 3] // [1, 2, 3]
     var arryaInt = [1, 2, 3]  // [1, 2, 3]
     var array3 = Array(arrayLiteral: 1, 2, 3) // [1, 2, 3]
-    lazy var statusList = [NSString]()
+    lazy var statusList = [NSString]() // ?
+    /// title数组
+    open var titles = [String]()
+    open var dataSource = [JXSegmentedBaseItemModel]()
+    open var itemModel: JXSegmentedBaseItemModel?
+    
+    open var index: Int = 0
+    open var isSelected: Bool = false
+    open var itemWidth: CGFloat = 0
+    
+    /// 如果将JXSegmentedView嵌套进UITableView的cell，每次重用的时候，JXSegmentedView进行reloadData时，会重新计算所有的title宽度。所以该应用场景，需要UITableView的cellModel缓存titles的文字宽度，再通过该闭包方法返回给JXSegmentedView。
+    open var widthForTitleClosure: ((String)->(CGFloat))?
+    private var currentImageInfo: String?
+    
+    
+    /// 指示器视图Frame转换到cell
+    open var indicatorConvertToItemFrame: CGRect = CGRect.zero
+    open var dotSize = CGSize(width: 10, height: 10)
+    open var dotOffset: CGPoint = CGPoint.zero
+    
+    
+    open var lineStyle: JXSegmentedIndicatorLineStyle = .normal
+    
+    open var image: UIImage? {
+        didSet {
+            layer.contents = image?.cgImage
+        }
+    }
+    
+    open private(set) weak var dataSource: JXSegmentedListContainerViewDataSource?
+    open private(set) var validListDict = [Int:JXSegmentedListContainerViewListDelegate]()
+    open var defaultSelectedIndex: Int = 0 {
+        didSet {
+            currentIndex = defaultSelectedIndex
+        }
+    }
+    
+    
+    
+    
+    public let selectedLineView: UIView = UIView()
+    open var dotView = UIView()
+    
+    open var titleNormalColor: UIColor = .black
+    open var dotColor = UIColor.red
+    open private(set) var scrollView: UIScrollView!
+    private var path = UIBezierPath()
+    open var titleLabel = UILabel()
+    public let titleLabel = UILabel()
+    public let maskTitleLabel = UILabel()
+    public let titleMaskLayer = CALayer()
+    public let maskTitleMaskLayer = CALayer()
+    open var titleNormalFont: UIFont = UIFont.systemFont(ofSize: 15)
+    
+    
+    
+//    需要再init 初始化
+    public let currentSelectedIndex: Int
+    public let currentSelectedItemFrame: CGRect
+    public let selectedType: JXSegmentedViewItemSelectedType
+    public let currentItemContentWidth: CGFloat
+    
+    
+    
+    
+    guard let itemModel = itemModel as? JXSegmentedTitleGradientItemModel else {
+        return
+    }
+    
     
     
     
@@ -55,8 +123,11 @@ class CodeBlockExample {
     }()
     
     
+    
+    
     private lazy var imgView: UIImageView = {
         let imgView = UIImageView()
+        imgView.contentMode = .scaleAspectFit
         imgView.layer.cornerRadius  = 16
         imgView.layer.masksToBounds = true
         imgView.image = UIImage(named: "defaultavatar")
@@ -96,6 +167,65 @@ class CodeBlockExample {
         make.height.equalTo(1)
         make.bottom.equalTo(0)
     }
+    
+    private lazy var collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        if let collectionViewClass = dataSource?.scrollViewClass?(in: self) as? UICollectionView.Type {
+            return collectionViewClass.init(frame: CGRect.zero, collectionViewLayout: layout)
+        }else {
+            return UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
+        }
+    }()
+    
+    
+    
+    
+    
+    
+    
+    // MARK: - cell赋值方法
+    open override func reloadData(itemModel: JXSegmentedBaseItemModel, selectedType: JXSegmentedViewItemSelectedType) {
+        super.reloadData(itemModel: itemModel, selectedType: selectedType )
+
+        guard let myItemModel = itemModel as? JXSegmentedTitleAttributeItemModel else {
+            return
+        }
+
+        titleLabel.numberOfLines = myItemModel.titleNumberOfLines
+        if myItemModel.isSelected && myItemModel.selectedAttributedTitle != nil {
+            titleLabel.attributedText = myItemModel.selectedAttributedTitle
+        }else {
+            titleLabel.attributedText = myItemModel.attributedTitle
+        }
+    }
+    
+    
+    open override func preferredRefreshItemModel(_ itemModel: JXSegmentedBaseItemModel, at index: Int, selectedIndex: Int) {
+        super.preferredRefreshItemModel(itemModel, at: index, selectedIndex: selectedIndex)
+
+        guard let itemModel = itemModel as? JXSegmentedDotItemModel else {
+            return
+        }
+
+        itemModel.dotOffset = dotOffset
+        itemModel.dotState = dotStates[index]
+        itemModel.dotColor = dotColor
+        itemModel.dotSize = dotSize
+        if dotCornerRadius == JXSegmentedViewAutomaticDimension {
+            itemModel.dotCornerRadius = dotSize.height/2
+        }else {
+            itemModel.dotCornerRadius = dotCornerRadius
+        }
+    }
+    
+    
+    
+    
+    
+    
     
     
     
