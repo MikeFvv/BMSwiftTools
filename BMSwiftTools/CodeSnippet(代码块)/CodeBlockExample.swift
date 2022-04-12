@@ -12,8 +12,8 @@ import Foundation
 /// <#xxx属性 #">
 
 
-
-// MARK: - 按钮监听方法
+❌⚠️✔️
+// MARK: - Some flags
 
 
 
@@ -35,6 +35,11 @@ class CodeBlockExample {
     open var index: Int = 0
     open var isSelected: Bool = false
     open var itemWidth: CGFloat = 0
+    
+    var name: String { get }
+    var type: Any.Type { get }
+    var kind: Kind { get }
+    var layout: UnsafeMutablePointer<InnerLayout>! { get }
     
     /// 如果将JXSegmentedView嵌套进UITableView的cell，每次重用的时候，JXSegmentedView进行reloadData时，会重新计算所有的title宽度。所以该应用场景，需要UITableView的cellModel缓存titles的文字宽度，再通过该闭包方法返回给JXSegmentedView。
     open var widthForTitleClosure: ((String)->(CGFloat))?
