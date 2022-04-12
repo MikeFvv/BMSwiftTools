@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E7A0014280578B50090A07A /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A0012280578B50090A07A /* main.json */; };
 		5E7AFFDB280571A50090A07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFDA280571A50090A07A /* AppDelegate.swift */; };
 		5E7AFFDD280571A50090A07A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFDC280571A50090A07A /* SceneDelegate.swift */; };
 		5E7AFFDF280571A50090A07A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFDE280571A50090A07A /* ViewController.swift */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		1FC20BFEA287D5FCFCC5F5F7 /* libPods-BMSwiftTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BMSwiftTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2335B99EE16333F56BEF1CCF /* Pods-BMSwiftTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMSwiftTools.release.xcconfig"; path = "Target Support Files/Pods-BMSwiftTools/Pods-BMSwiftTools.release.xcconfig"; sourceTree = "<group>"; };
+		5E7A0010280578B50090A07A /* CodeBlockExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeBlockExample.swift; sourceTree = "<group>"; };
+		5E7A0012280578B50090A07A /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		5E7AFFD7280571A50090A07A /* BMSwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMSwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7AFFDA280571A50090A07A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E7AFFDC280571A50090A07A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +90,23 @@
 				6A5B768878F007CE48FB531D /* Pods-BMSwiftTools.debug.xcconfig */,
 				2335B99EE16333F56BEF1CCF /* Pods-BMSwiftTools.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E7A000F280578B50090A07A /* CodeSnippet(代码块) */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A0010280578B50090A07A /* CodeBlockExample.swift */,
+			);
+			path = "CodeSnippet(代码块)";
+			sourceTree = "<group>";
+		};
+		5E7A0011280578B50090A07A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A0012280578B50090A07A /* main.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5E7AFFCE280571A50090A07A = {
@@ -116,6 +134,8 @@
 		5E7AFFD9280571A50090A07A /* BMSwiftTools */ = {
 			isa = PBXGroup;
 			children = (
+				5E7A000F280578B50090A07A /* CodeSnippet(代码块) */,
+				5E7A0011280578B50090A07A /* Resources */,
 				5E7AFFDA280571A50090A07A /* AppDelegate.swift */,
 				5E7AFFDC280571A50090A07A /* SceneDelegate.swift */,
 				5E7AFFDE280571A50090A07A /* ViewController.swift */,
@@ -260,6 +280,7 @@
 			files = (
 				5E7AFFE7280571A70090A07A /* LaunchScreen.storyboard in Resources */,
 				5E7AFFE4280571A70090A07A /* Assets.xcassets in Resources */,
+				5E7A0014280578B50090A07A /* main.json in Resources */,
 				5E7AFFE2280571A50090A07A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
