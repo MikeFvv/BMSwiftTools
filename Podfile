@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
-
+use_frameworks!
 inhibit_all_warnings!   #解决忽略引入库的所有警告
 
 # pod update --verbose --no-repo-update
@@ -15,7 +15,10 @@ target 'BMSwiftTools' do
 #  5.自带多线程，防死锁
 #  6.处理了Https证书流程，节省移动端开发
 #  7.支持网络状态判断
-  pod 'AFNetworking'
+#  pod 'AFNetworking'
+
+  # Swfit网络请求
+  pod 'Alamofire'
   
   # 布局
   # pod 'Masonry'  #OC版本
@@ -25,13 +28,17 @@ target 'BMSwiftTools' do
   # pod 'JXCategoryView'    #OC 版本
   pod 'JXSegmentedView'   #swift 版本
 
-
-  
   # 上下拉刷新
   pod 'MJRefresh'
   # 字典转模型框架
-  pod 'MJExtension'
-  pod 'SDWebImage'
+#  pod 'MJExtension'
+  pod 'KakaJSON'
+  
+  # 图片下载
+#  pod 'SDWebImage'
+  pod 'Kingfisher'
+  pod 'KingfisherWebP'   # 如果需要这种格式的图片
+  
   
   # 模型对象存储Sqlite 数据库
   # pod 'WHC_ModelSqliteKit'

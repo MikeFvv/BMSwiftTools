@@ -12,7 +12,14 @@ import Foundation
 /// <#xxx属性 #">
 
 
-❌⚠️✔️
+// ❌错误
+// ⚠️❗️警告
+// 🔴⭕️注意
+
+❌⚠️✔️ ❗️⭕️ 🔴
+
+
+
 // MARK: - Some flags
 
 
@@ -103,32 +110,85 @@ class CodeBlockExample {
     
     
     
-    
-    
-    
     // MARK: - 创建视图
-    private lazy var nextBtn : UIButton = {
-        let nextBtn = UIButton()
-        nextBtn.setTitle("下一篇", for: .normal)
-        nextBtn.setTitleColor(.white, for: .normal)
-        nextBtn.backgroundColor = RGB(r: 219, g: 178, b: 114)
-        nextBtn.titleLabel?.font = UIFont.pingFangRegular(14)
-        //            nextBtn.setImage(UIImage(named: "1582"), for: .normal)
-        nextBtn.adjustsImageWhenHighlighted = false
+    
+    let lineView = UIView()
+    lineView.backgroundColor = .red
+    contentView.addSubview(lineView)
+    lineView.snp.makeConstraints { make in
+        make.left.equalTo(12)
+        make.right.equalTo(-12)
+        make.height.equalTo(1)
+        make.bottom.equalTo(0)
+    }
+    
+    let bgBox = UIView()
+    bgBox.backgroundColor = .green
+    superview.addSubview(bgBox)
+
+    bgBox.snp.makeConstraints { (make) -> Void in
+        make.top.equalTo(superview).offset(20)
+        make.left.equalTo(superview).offset(20)
+        make.bottom.equalTo(superview).offset(-20)
+        make.right.equalTo(superview).offset(-20)
+    }
+    
+    lazy var playerView: UIView = {
+       let _playerView = UIView()
+        _playerView.backgroundColor = .red
         
-        //            let space = 3.0
-        //        nextBtn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        //            nextBtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -space, bottom: 0, right: space)
-        //            nextBtn.imageView?.contentMode = .scaleAspectFit
-        nextBtn.addTarget(self,
-                          action: #selector(nextBtnClick),
-                          for: .touchUpInside)
-        
-        return nextBtn
+        _playerView.frame = CGRect(x: 0, y: 44 + UIApplication.shared.statusBarFrame.size.height, width: self.view.bounds.width, height: self.view.bounds.height * 9 / 16)
+        return _playerView
     }()
     
     
+    let label: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .blue
+        label.numberOfLines = 0
+        label.lineBreakMode = .byClipping
+        label.textColor = .white
+        label.text = NSLocalizedString("Lorem ipsum dolor sit amet", comment: "")
+        return label
+    }()
     
+    // 与上面分开
+    label.snp.makeConstraints { make in
+        make.top.equalTo(contentView).inset(20)
+        make.leading.equalTo(contentView).inset(20)
+        make.trailing.equalTo(contentView).inset(20)
+        make.bottom.equalTo(contentView).inset(20)
+    }
+    
+    private lazy var nextBtn : UIButton = {
+        let _nextBtn = UIButton()
+        _nextBtn.setTitle("下一篇", for: .normal)
+        _nextBtn.setTitleColor(.white, for: .normal)
+        _nextBtn.backgroundColor = RGB(r: 219, g: 178, b: 114)
+        _nextBtn.titleLabel?.font = UIFont.pingFangRegular(14)
+        //            _nextBtn.setImage(UIImage(named: "1582"), for: .normal)
+        _nextBtn.adjustsImageWhenHighlighted = false
+        
+        //            let space = 3.0
+        //        _nextBtn.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        //            _nextBtn.imageEdgeInsets = UIEdgeInsets(top: 0, left: -space, bottom: 0, right: space)
+        //            _nextBtn.imageView?.contentMode = .scaleAspectFit
+        _nextBtn.addTarget(self,
+                          action: #selector(nextBtnClick),
+                          for: .touchUpInside)
+        _nextBtn.frame = CGRect(x: 50, y: 80, width: 150, height: 50)
+        
+        return _nextBtn
+    }()
+    
+        
+    lazy var playerView: UIView = {
+       let _playerView = UIView()
+        _playerView.backgroundColor = .red
+        
+        _playerView.frame = CGRect(x: 0, y: 44 + UIApplication.shared.statusBarFrame.size.height, width: self.view.bounds.width, height: self.view.bounds.height * 9 / 16)
+        return _playerView
+    }()
     
     private lazy var imgView: UIImageView = {
         let imgView = UIImageView()
@@ -162,30 +222,46 @@ class CodeBlockExample {
     }()
     
     
-    
-    let lineView = UIView()
-    lineView.backgroundColor = .red
-    contentView.addSubview(lineView)
-    lineView.snp.makeConstraints { make in
-        make.left.equalTo(12)
-        make.right.equalTo(-12)
-        make.height.equalTo(1)
-        make.bottom.equalTo(0)
-    }
-    
-    private lazy var collectionView: UICollectionView = {
+    fileprivate lazy var collectionView: UICollectionView = {
+        let rect = CGRect(x: 0, y: 44 + UIApplication.shared.statusBarFrame.size.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 44 - UIApplication.shared.statusBarFrame.size.height)
+        
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+//        layout.itemSize = CGSize(width: rect.width, height: rect.height)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
-        if let collectionViewClass = dataSource?.scrollViewClass?(in: self) as? UICollectionView.Type {
-            return collectionViewClass.init(frame: CGRect.zero, collectionViewLayout: layout)
-        }else {
-            return UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
-        }
+        
+        let _collectiobView = UICollectionView(frame: rect, collectionViewLayout: layout)
+        _collectiobView.backgroundColor = .white
+        _collectiobView.isPagingEnabled = true
+        _collectiobView.contentSize = CGSize(width: rect.width * 10.0, height: rect.height)
+        _collectiobView.register(UINib(nibName: "GCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GCollectionViewCell")
+        _collectiobView.dataSource = self
+        _collectiobView.delegate = self
+        return _collectiobView
     }()
+    view.addSubview(collectionView)
+    collectionView.snp.makeConstraints { (make) in
+        make.left.right.bottom.equalToSuperview()
+        make.top.equalToSuperview().offset(HZCustomNavigationBar.statusNavigationBarHeight)
+    }
     
     
+    
+    let scrollView  = UIScrollView()
+    let contentView = UIView()
+    
+    view.addSubview(scrollView)
+    scrollView.snp.makeConstraints { make in
+        make.edges.equalTo(view).inset(UIEdgeInsets.zero)
+    }
+    
+    contentView.backgroundColor = UIColor.lightGray
+    scrollView.addSubview(contentView)
+    contentView.snp.makeConstraints { make in
+        make.edges.equalTo(scrollView).inset(UIEdgeInsets.zero)
+        make.width.equalTo(scrollView)
+    }
     
     
     
