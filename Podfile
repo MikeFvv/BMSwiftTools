@@ -37,7 +37,7 @@ target 'BMSwiftTools' do
   # 图片下载
 #  pod 'SDWebImage'
   pod 'Kingfisher'
-  pod 'KingfisherWebP'   # 如果需要这种格式的图片
+#  pod 'KingfisherWebP'   # 如果需要这种格式的图片
   
   
   # 模型对象存储Sqlite 数据库

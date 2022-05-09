@@ -25,9 +25,9 @@ class BaseTabBarController: UITabBarController {
         
         addChild("首页", "wifi", "wifi", HomeViewController.self)
         
-        addChild("动态", "thumb_pic", "thumb_pic", LiveViewController.self)
+        addChild("直播", "thumb_pic", "thumb_pic", LiveViewController.self)
         
-        addChild("直播", "thumb_pic", "thumb_pic", MeViewController.self)
+        addChild("我的", "thumb_pic", "thumb_pic", MeViewController.self)
     }
 
     func addChild(_ title: String,_ image: String, _ selectedImage: String,_ type: UIViewController.Type) {

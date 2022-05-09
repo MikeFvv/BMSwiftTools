@@ -14,6 +14,7 @@
 		5E7618172828B41400BD5E69 /* BaseTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618162828B41400BD5E69 /* BaseTabBar.swift */; };
 		5E7618192828B45600BD5E69 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618182828B45600BD5E69 /* API.swift */; };
 		5E7618232828B7B100BD5E69 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618222828B7B100BD5E69 /* ExampleModel.swift */; };
+		5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618252828D9CC00BD5E69 /* Date+Extensions.swift */; };
 		5E7A0014280578B50090A07A /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E7A0012280578B50090A07A /* main.json */; };
 		5E7AFFDB280571A50090A07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFDA280571A50090A07A /* AppDelegate.swift */; };
 		5E7AFFDD280571A50090A07A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFDC280571A50090A07A /* SceneDelegate.swift */; };
@@ -38,7 +39,6 @@
 		5EFD9E1B280814960026F04F /* HXReuseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E0D280814960026F04F /* HXReuseable.swift */; };
 		5EFD9E1C280814960026F04F /* HXGlobalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E0F280814960026F04F /* HXGlobalTool.swift */; };
 		5EFD9E1D280814960026F04F /* HXGlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */; };
-		5EFD9E1E280814960026F04F /* HXGlobalConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E11280814960026F04F /* HXGlobalConsts.swift */; };
 		5EFD9E21280816B60026F04F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EFD9E20280816B60026F04F /* Images.xcassets */; };
 		5EFD9E242808170B0026F04F /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E232808170B0026F04F /* Version.swift */; };
 		5EFD9E26280817100026F04F /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E25280817100026F04F /* Define.swift */; };
@@ -75,6 +75,7 @@
 		5E7618182828B45600BD5E69 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BMSwiftTools-Bridging-Header.h"; sourceTree = "<group>"; };
 		5E7618222828B7B100BD5E69 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
+		5E7618252828D9CC00BD5E69 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		5E7A0010280578B50090A07A /* CodeBlockExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeBlockExample.swift; sourceTree = "<group>"; };
 		5E7A0012280578B50090A07A /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		5E7AFFD7280571A50090A07A /* BMSwiftTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMSwiftTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +105,6 @@
 		5EFD9E0D280814960026F04F /* HXReuseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXReuseable.swift; sourceTree = "<group>"; };
 		5EFD9E0F280814960026F04F /* HXGlobalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXGlobalTool.swift; sourceTree = "<group>"; };
 		5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXGlobalFuncs.swift; sourceTree = "<group>"; };
-		5EFD9E11280814960026F04F /* HXGlobalConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXGlobalConsts.swift; sourceTree = "<group>"; };
 		5EFD9E20280816B60026F04F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5EFD9E232808170B0026F04F /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		5EFD9E25280817100026F04F /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
@@ -177,6 +177,15 @@
 				5E7618222828B7B100BD5E69 /* ExampleModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5E7618242828D9BF00BD5E69 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD9E01280814960026F04F /* UIKit */,
+				5EFD9E05280814960026F04F /* Foundation */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5E7A000F280578B50090A07A /* CodeSnippet(代码块) */ = {
@@ -252,30 +261,21 @@
 		5EFD9DFE280814870026F04F /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				5EFD9DFF280814960026F04F /* Tools */,
+				5E7618242828D9BF00BD5E69 /* Extensions */,
 				5EA008C6281A72C5008E1406 /* 字符串操作 */,
 				5EFD9E22280816FD0026F04F /* Util */,
-				5EFD9DFF280814960026F04F /* HXTools */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
 		};
-		5EFD9DFF280814960026F04F /* HXTools */ = {
+		5EFD9DFF280814960026F04F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				5EFD9E00280814960026F04F /* Extensions */,
 				5EFD9E0B280814960026F04F /* Custom */,
 				5EFD9E0E280814960026F04F /* Global */,
 			);
-			path = HXTools;
-			sourceTree = "<group>";
-		};
-		5EFD9E00280814960026F04F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5EFD9E01280814960026F04F /* UIKit */,
-				5EFD9E05280814960026F04F /* Foundation */,
-			);
-			path = Extensions;
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		5EFD9E01280814960026F04F /* UIKit */ = {
@@ -291,6 +291,7 @@
 		5EFD9E05280814960026F04F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				5E7618252828D9CC00BD5E69 /* Date+Extensions.swift */,
 				5EFD9E06280814960026F04F /* String+HXTools.swift */,
 				5EFD9E07280814960026F04F /* Array+HXTools.swift */,
 				5EFD9E08280814960026F04F /* DispathQueue+HXTools.swift */,
@@ -314,7 +315,6 @@
 			children = (
 				5EFD9E0F280814960026F04F /* HXGlobalTool.swift */,
 				5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */,
-				5EFD9E11280814960026F04F /* HXGlobalConsts.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -545,13 +545,13 @@
 				5EFD9E17280814960026F04F /* DispathQueue+HXTools.swift in Sources */,
 				5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */,
 				5EFD9E242808170B0026F04F /* Version.swift in Sources */,
-				5EFD9E1E280814960026F04F /* HXGlobalConsts.swift in Sources */,
 				5EFD9E2A280817300026F04F /* Device.swift in Sources */,
 				5EFD9E282808171C0026F04F /* UserDefault.swift in Sources */,
 				5E7AFFDD280571A50090A07A /* SceneDelegate.swift in Sources */,
 				5EFD9E1B280814960026F04F /* HXReuseable.swift in Sources */,
 				5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */,
 				5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */,
+				5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */,
 				5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */,
 				5EA008C8281A735F008E1406 /* StringManager.swift in Sources */,
 				5E7618232828B7B100BD5E69 /* ExampleModel.swift in Sources */,

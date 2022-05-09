@@ -64,20 +64,20 @@ class HomeViewController: UIViewController {
         //请求数据
         AF.request(API.imgrank,parameters: ["page": 1]).responseJSON { response in
             do {
-                guard let dict:Any = try response.result.get() else { return }
-                let json = JSON(dict)["items"].arrayObject
-                guard let models = json?.kj.modelArray(ExampleModelName.self) else { return }
-                
-                
-                self.items.removeAll()
-                self.items.append(contentsOf: models)
-                //重新加载数据
-                self.tableView.reloadData()
-                //接收加载
-                self.tableView.mj_header?.endRefreshing()
-                
-                //下拉刷新完成后，将配置置为 1
-                self.page = 1
+//                guard let dict:Any = try response.result.get() else { return }
+//                let json = JSON(dict)["items"].arrayObject
+//                guard let models = json?.kj.modelArray(ExampleModelName.self) else { return }
+//
+//
+//                self.items.removeAll()
+//                self.items.append(contentsOf: models)
+//                //重新加载数据
+//                self.tableView.reloadData()
+//                //接收加载
+//                self.tableView.mj_header?.endRefreshing()
+//
+//                //下拉刷新完成后，将配置置为 1
+//                self.page = 1
             } catch {
                print(error)
             }
@@ -88,18 +88,18 @@ class HomeViewController: UIViewController {
         //请求数据
         AF.request(API.imgrank,parameters: ["page": page + 1]).responseJSON { response in
             do {
-                guard let dict:Any = try response.result.get() else { return }
-                let json = JSON(dict)["items"].arrayObject
-                guard let models = json?.kj.modelArray(ExampleModelName.self) else { return }
-                
-                self.items.append(contentsOf: models)
-                //重新加载数据
-                self.tableView.reloadData()
-                //接收加载
-                self.tableView.mj_footer?.endRefreshing()
-                
-                //下拉刷新完成后，将配置置为 1
-                self.page += 1
+//                guard let dict:Any = try response.result.get() else { return }
+//                let json = JSON(dict)["items"].arrayObject
+//                guard let models = json?.kj.modelArray(ExampleModelName.self) else { return }
+//
+//                self.items.append(contentsOf: models)
+//                //重新加载数据
+//                self.tableView.reloadData()
+//                //接收加载
+//                self.tableView.mj_footer?.endRefreshing()
+//
+//                //下拉刷新完成后，将配置置为 1
+//                self.page += 1
             } catch {
                print(error)
             }
@@ -131,7 +131,7 @@ extension HomeViewController: UITableViewDataSource {
         //图片下载
 //        let url = (item.user?.thumb ?? "").replacingOccurrences(of: ".webp", with: ".png")
         let url = item.user?.thumb ?? ""
-        cell.imageView?.kf.setImage(with: URL(string: url),options: [.processor(WebPProcessor.default),.cacheSerializer(WebPSerializer.default)])
+//        cell.imageView?.kf.setImage(with: URL(string: url),options: [.processor(WebPProcessor.default),.cacheSerializer(WebPSerializer.default)])
         return cell
     }
 }

@@ -9,12 +9,14 @@ import UIKit
 
 class BaseTabBar: UITabBar {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        for button in subviews where button is UIControl {
+            var frame = button.frame
+            frame.origin.y = -10
+            button.frame = frame
+        }
     }
-    */
 
 }
