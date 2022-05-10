@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E27460A282A0D9000C2D686 /* TupleRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274609282A0D9000C2D686 /* TupleRegex.swift */; };
+		5E274613282A2E5C00C2D686 /* BMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274610282A2E5C00C2D686 /* BMTextField.swift */; };
+		5E274614282A2E5C00C2D686 /* BMTextInput+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274611282A2E5C00C2D686 /* BMTextInput+Extension.swift */; };
+		5E274615282A2E5C00C2D686 /* BMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274612282A2E5C00C2D686 /* BMTextView.swift */; };
+		5E274617282A2F7E00C2D686 /* BMTestTextInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274616282A2F7E00C2D686 /* BMTestTextInputController.swift */; };
+		5E274627282A385E00C2D686 /* OCBMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274626282A385E00C2D686 /* OCBMTextField.m */; };
+		5E274629282A6F5E00C2D686 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274628282A6F5E00C2D686 /* DemoViewController.swift */; };
 		5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76180E2828B3A200BD5E69 /* HomeViewController.swift */; };
 		5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618102828B3B400BD5E69 /* MeViewController.swift */; };
 		5E7618132828B3C500BD5E69 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618122828B3C500BD5E69 /* LiveViewController.swift */; };
@@ -67,6 +74,14 @@
 /* Begin PBXFileReference section */
 		2335B99EE16333F56BEF1CCF /* Pods-BMSwiftTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMSwiftTools.release.xcconfig"; path = "Target Support Files/Pods-BMSwiftTools/Pods-BMSwiftTools.release.xcconfig"; sourceTree = "<group>"; };
 		4A9D4E2122FE768BA2778CBE /* Pods_BMSwiftTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMSwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E274609282A0D9000C2D686 /* TupleRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleRegex.swift; sourceTree = "<group>"; };
+		5E274610282A2E5C00C2D686 /* BMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTextField.swift; sourceTree = "<group>"; };
+		5E274611282A2E5C00C2D686 /* BMTextInput+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMTextInput+Extension.swift"; sourceTree = "<group>"; };
+		5E274612282A2E5C00C2D686 /* BMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTextView.swift; sourceTree = "<group>"; };
+		5E274616282A2F7E00C2D686 /* BMTestTextInputController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTestTextInputController.swift; sourceTree = "<group>"; };
+		5E274625282A385E00C2D686 /* OCBMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBMTextField.h; sourceTree = "<group>"; };
+		5E274626282A385E00C2D686 /* OCBMTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBMTextField.m; sourceTree = "<group>"; };
+		5E274628282A6F5E00C2D686 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		5E76180E2828B3A200BD5E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E7618102828B3B400BD5E69 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		5E7618122828B3C500BD5E69 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +163,27 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5E274608282A0D9000C2D686 /* SwiftRegex5 */ = {
+			isa = PBXGroup;
+			children = (
+				5E274609282A0D9000C2D686 /* TupleRegex.swift */,
+			);
+			path = SwiftRegex5;
+			sourceTree = "<group>";
+		};
+		5E27460F282A2E5C00C2D686 /* BMTextInput */ = {
+			isa = PBXGroup;
+			children = (
+				5E274610282A2E5C00C2D686 /* BMTextField.swift */,
+				5E274611282A2E5C00C2D686 /* BMTextInput+Extension.swift */,
+				5E274612282A2E5C00C2D686 /* BMTextView.swift */,
+				5E274616282A2F7E00C2D686 /* BMTestTextInputController.swift */,
+				5E274625282A385E00C2D686 /* OCBMTextField.h */,
+				5E274626282A385E00C2D686 /* OCBMTextField.m */,
+			);
+			path = BMTextInput;
+			sourceTree = "<group>";
+		};
 		5E76180D2828B36C00BD5E69 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +194,7 @@
 				5E7618102828B3B400BD5E69 /* MeViewController.swift */,
 				5E7618182828B45600BD5E69 /* API.swift */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
+				5E274628282A6F5E00C2D686 /* DemoViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -253,6 +290,7 @@
 		5EA008C6281A72C5008E1406 /* 字符串操作 */ = {
 			isa = PBXGroup;
 			children = (
+				5E274608282A0D9000C2D686 /* SwiftRegex5 */,
 				5EA008C7281A735F008E1406 /* StringManager.swift */,
 			);
 			path = "字符串操作";
@@ -261,6 +299,7 @@
 		5EFD9DFE280814870026F04F /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				5E27460F282A2E5C00C2D686 /* BMTextInput */,
 				5EFD9DFF280814960026F04F /* Tools */,
 				5E7618242828D9BF00BD5E69 /* Extensions */,
 				5EA008C6281A72C5008E1406 /* 字符串操作 */,
@@ -532,11 +571,16 @@
 				5EFD9E16280814960026F04F /* Array+HXTools.swift in Sources */,
 				5E7AFFDF280571A50090A07A /* ViewController.swift in Sources */,
 				5E7618172828B41400BD5E69 /* BaseTabBar.swift in Sources */,
+				5E274629282A6F5E00C2D686 /* DemoViewController.swift in Sources */,
 				5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */,
 				5EFD9E1C280814960026F04F /* HXGlobalTool.swift in Sources */,
+				5E274615282A2E5C00C2D686 /* BMTextView.swift in Sources */,
 				5EFD9E18280814960026F04F /* Dictionary+HXTools.swift in Sources */,
 				5E7618192828B45600BD5E69 /* API.swift in Sources */,
 				5EFD9E15280814960026F04F /* String+HXTools.swift in Sources */,
+				5E274627282A385E00C2D686 /* OCBMTextField.m in Sources */,
+				5E274613282A2E5C00C2D686 /* BMTextField.swift in Sources */,
+				5E27460A282A0D9000C2D686 /* TupleRegex.swift in Sources */,
 				5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */,
 				5EFD9E1A280814960026F04F /* HXAlertTool.swift in Sources */,
 				5E7AFFDB280571A50090A07A /* AppDelegate.swift in Sources */,
@@ -552,7 +596,9 @@
 				5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */,
 				5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */,
 				5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */,
+				5E274617282A2F7E00C2D686 /* BMTestTextInputController.swift in Sources */,
 				5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */,
+				5E274614282A2E5C00C2D686 /* BMTextInput+Extension.swift in Sources */,
 				5EA008C8281A735F008E1406 /* StringManager.swift in Sources */,
 				5E7618232828B7B100BD5E69 /* ExampleModel.swift in Sources */,
 				5EFD9E1D280814960026F04F /* HXGlobalFuncs.swift in Sources */,
