@@ -39,6 +39,10 @@
 		5E2746FC282A94B700C2D686 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 5E2746E5282A94B700C2D686 /* .gitkeep */; };
 		5E2746FD282A94B700C2D686 /* jf_loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2746E6282A94B700C2D686 /* jf_loading@2x.png */; };
 		5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2746FE282A94C000C2D686 /* UIColor+Extension.swift */; };
+		5E274701282B560300C2D686 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274700282B560200C2D686 /* BMButton.swift */; };
+		5E274703282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */; };
+		5E274706282B9B1A00C2D686 /* GiftPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */; };
+		5E274708282BAFAA00C2D686 /* GiftNumInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */; };
 		5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76180E2828B3A200BD5E69 /* HomeViewController.swift */; };
 		5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618102828B3B400BD5E69 /* MeViewController.swift */; };
 		5E7618132828B3C500BD5E69 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618122828B3C500BD5E69 /* LiveViewController.swift */; };
@@ -132,6 +136,10 @@
 		5E2746E5282A94B700C2D686 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		5E2746E6282A94B700C2D686 /* jf_loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jf_loading@2x.png"; sourceTree = "<group>"; };
 		5E2746FE282A94C000C2D686 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		5E274700282B560200C2D686 /* BMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
+		5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithImageAndTitleExtension.swift; sourceTree = "<group>"; };
+		5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPopMenu.swift; sourceTree = "<group>"; };
+		5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftNumInputView.swift; sourceTree = "<group>"; };
 		5E76180E2828B3A200BD5E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E7618102828B3B400BD5E69 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		5E7618122828B3C500BD5E69 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -314,8 +322,12 @@
 				5E7618122828B3C500BD5E69 /* LiveViewController.swift */,
 				5E7618102828B3B400BD5E69 /* MeViewController.swift */,
 				5E7618182828B45600BD5E69 /* API.swift */,
+				5E274700282B560200C2D686 /* BMButton.swift */,
+				5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */,
 				5E274628282A6F5E00C2D686 /* DemoViewController.swift */,
 				5E274666282A88D900C2D686 /* GiveBtnView.swift */,
+				5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */,
+				5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
 			);
 			path = Main;
@@ -696,6 +708,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E274703282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift in Sources */,
 				5E2746F3282A94B700C2D686 /* UIView+JFRect.swift in Sources */,
 				5EFD9E16280814960026F04F /* Array+HXTools.swift in Sources */,
 				5E7AFFDF280571A50090A07A /* ViewController.swift in Sources */,
@@ -707,6 +720,7 @@
 				5E274615282A2E5C00C2D686 /* BMTextView.swift in Sources */,
 				5EFD9E18280814960026F04F /* Dictionary+HXTools.swift in Sources */,
 				5E2746EB282A94B700C2D686 /* JFAlertAction.swift in Sources */,
+				5E274701282B560300C2D686 /* BMButton.swift in Sources */,
 				5E7618192828B45600BD5E69 /* API.swift in Sources */,
 				5E2746EF282A94B700C2D686 /* JFToastQueueTask.swift in Sources */,
 				5EFD9E15280814960026F04F /* String+HXTools.swift in Sources */,
@@ -722,6 +736,7 @@
 				5E2746ED282A94B700C2D686 /* JFAlertView+PopupView.swift in Sources */,
 				5E2746F8282A94B700C2D686 /* JFPopupAnimation.swift in Sources */,
 				5E2746EE282A94B700C2D686 /* JFAlertView+UIViewController.swift in Sources */,
+				5E274708282BAFAA00C2D686 /* GiftNumInputView.swift in Sources */,
 				5E2746F0282A94B700C2D686 /* JFToastView+Objc.swift in Sources */,
 				5E2746F4282A94B700C2D686 /* UIImage+JFColor.swift in Sources */,
 				5EFD9E17280814960026F04F /* DispathQueue+HXTools.swift in Sources */,
@@ -752,6 +767,7 @@
 				5E2746E8282A94B700C2D686 /* JFPopupAction.swift in Sources */,
 				5EFD9E26280817100026F04F /* Define.swift in Sources */,
 				5EFD9E19280814960026F04F /* Date+HXTools.swift in Sources */,
+				5E274706282B9B1A00C2D686 /* GiftPopMenu.swift in Sources */,
 				5E2746EA282A94B700C2D686 /* UIView+JFPopup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
