@@ -138,7 +138,7 @@ public class GiftPopMenu: UIView {
 
 
 // MARK: - 页面显示、隐藏
-extension GiftPopMenu{
+extension GiftPopMenu {
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.first?.view != tableView{
@@ -151,7 +151,7 @@ extension GiftPopMenu{
             return
         }
         initViews()
-        UIApplication.shared.keyWindow?.addSubview(self)
+        UIApplication.shared.windows.first { $0.isKeyWindow }?.addSubview(self)
     }
     
     public func dismiss() {

@@ -9,7 +9,7 @@ import UIKit
 
 class DemoViewController: UIViewController {
     
-    var isMaxInpput: Bool = false
+    var numString: String = ""
     private lazy var giveBtnView : GiveBtnView = {
         let instance = GiveBtnView()
         instance.backgroundColor = .white
@@ -23,13 +23,15 @@ class DemoViewController: UIViewController {
 
     private lazy var giftNumInputView : GiftNumInputView = {
         let instance = GiftNumInputView()
-        instance.backgroundColor = .white
-        instance.layer.borderWidth = 0.3
-        instance.layer.borderColor = UIColor.lightGray.cgColor
+        instance.delegate = self
         return instance
     }()
     
-    
+    private lazy var jggKeyboardView : JGGKeyboardView = {
+        let instance = JGGKeyboardView()
+        instance.delegate = self
+        return instance
+    }()
     
     
     override func viewDidLoad() {
@@ -65,17 +67,29 @@ class DemoViewController: UIViewController {
             make.left.equalTo(bgBox).offset(50)
             make.size.equalTo(CGSize(width: 130, height: 31))
         }
-        
-        
+
+    }
+    
+    
+    func inputKeyboard() {
+        giftNumInputView.contentFrame = CGRect(x: 0, y: 550, width: self.view.frame.size.width, height: 50)
+        giftNumInputView.show()
+        giveBtnView.numLabel.text = "1"
         
     }
     
-
+    func jggKeyboardViewFunc() {
+        jggKeyboardView.contentFrame = CGRect(x: 200, y: 550, width: 150, height: 120)
+        jggKeyboardView.show()
+        giveBtnView.numLabel.text = "0"
+        numString = ""
+    }
+    
 }
 
 
-
-extension DemoViewController: GiveBtnViewDelegate {
+// MARK: - 创建视图
+extension DemoViewController: GiveBtnViewDelegate,GiftNumInputViewDelegate,JGGKeyboardViewDelegate {
     func giveBtnClick() {
         
     }
@@ -106,6 +120,8 @@ extension DemoViewController: GiveBtnViewDelegate {
             
             if index == 0 {
                 self?.inputKeyboard()
+//                self?.jggKeyboardViewFunc()
+                
                 return
             }
             let popDict = popData[index]
@@ -116,22 +132,43 @@ extension DemoViewController: GiveBtnViewDelegate {
         popMenu.show()
     }
     
-    func inputKeyboard() {
-        giftNumInputView.frame = CGRect(x: 0, y: 550, width: self.view.frame.size.width, height: 50)
-        giftNumInputView.show()
-        giftNumInputView.textField.didMaxLength = { textField in
-            self.isMaxInpput = true
-//            debugPrint("textField1 max")
-        }
-        
-        giftNumInputView.textField.didValueChange = { textField in
-            
-            if self.isMaxInpput {
-                textField.text = "99999"
-            }
-            self.isMaxInpput = false
-            debugPrint("textField2: \(textField.text ?? "")")
-        }
+    
+    
+    func confirmBtnClick(text: String) {
+        giveBtnView.numLabel.text = text
     }
     
+    
+    
+    func jggKeyboardViewDidSelect(string :String) {
+        
+        if string == "确定" {
+            jggKeyboardView.dismiss()
+            if numString == "0" {
+                giveBtnView.numLabel.text = "1"
+                numString = "1"
+                return
+            }
+        } else if string == "⬅️" {
+            if numString.count <= 1 {
+                giveBtnView.numLabel.text = "1"
+                numString = "1"
+                return
+            }
+            numString.removeLast()
+        } else {
+            if numString.count >= 5 {
+                numString = "99999"
+            } else {
+                numString.append(string)
+            }
+        }
+        giveBtnView.numLabel.text = numString
+        
+    }
+    
+    
 }
+
+
+

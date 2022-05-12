@@ -9,7 +9,7 @@ import UIKit
 
 
 protocol GiftNumInputViewDelegate: NSObjectProtocol {
-    func confirmBtnClick()
+    func confirmBtnClick(text: String)
 }
 
 
@@ -17,10 +17,21 @@ protocol GiftNumInputViewDelegate: NSObjectProtocol {
 class GiftNumInputView: UIView {
     
     weak var delegate: GiftNumInputViewDelegate?
+    public var contentFrame:CGRect!
+    var isMaxInpput: Bool = false
+    
+    private lazy var contentBgView : UIView = {
+        let instance = UIView()
+        instance.backgroundColor = .white
+        instance.layer.borderWidth = 0.3
+        instance.layer.borderColor = UIColor.lightGray.cgColor
+        return instance
+    }()
     
     private lazy var confirmBtn: UIButton = {
         let instance = UIButton(type: .custom)
-        instance.backgroundColor = RGB(r: 2, g: 168, b: 162)
+        instance.backgroundColor = .lightGray
+        instance.isEnabled = false
         instance.setTitle("确定", for: .normal)
         instance.setTitleColor(.white, for: .normal)
         instance.setTitleColor(UIColor.white.withAlphaComponent(0.7), for: .highlighted)
@@ -45,10 +56,10 @@ class GiftNumInputView: UIView {
         instance.keyboardType = .numberPad
         instance.returnKeyType = .done
         instance.clearButtonMode = .always
-//        instance.text = "1"
+        //        instance.text = "1"
         
-//        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 40))
-//        instance.leftView = leftView
+        //        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 40))
+        //        instance.leftView = leftView
         instance.leftViewMode = .whileEditing
         
         instance.maxLength = 5
@@ -63,32 +74,65 @@ class GiftNumInputView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        self.frame = UIScreen.main.bounds
         
         createUI()
+        
+        textField.didMaxLength = { textField in
+            self.isMaxInpput = true
+        }
+        
+        textField.didValueChange = { textField in
+            if self.isMaxInpput {
+                textField.text = "99999"
+            }
+            self.isMaxInpput = false
+            
+            if textField.text?.count ?? 0 > 0 {
+                let num = Int(textField.text ?? "0")
+                if num! > 0 {
+                    self.confirmBtn.isEnabled = true
+                    self.confirmBtn.backgroundColor = RGB(r: 2, g: 168, b: 162)
+                } else {
+                    self.confirmBtn.isEnabled = false
+                    self.confirmBtn.backgroundColor = .lightGray
+                    textField.text = ""
+                }
+            }
+            
+        }
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        contentBgView.frame = self.contentFrame
+        
+    }
     
     
     @objc private func confirmBtnClicked(_ sender: UIButton) {
-        delegate?.confirmBtnClick()
+        dismiss()
+        delegate?.confirmBtnClick(text: textField.text ?? "")
     }
     
     func createUI() {
-        backgroundColor = .white
         
+        addSubview(contentBgView)
         
-        addSubview(confirmBtn)
+        contentBgView.addSubview(confirmBtn)
         confirmBtn.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.right.equalToSuperview().offset(-10)
             make.size.equalTo(CGSize(width: 60, height: 35))
         }
         
-        addSubview(textField)
+        contentBgView.addSubview(textField)
         textField.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.left.equalToSuperview().offset(10)
@@ -98,7 +142,6 @@ class GiftNumInputView: UIView {
         
     }
     
-    
 }
 
 
@@ -106,19 +149,19 @@ class GiftNumInputView: UIView {
 extension GiftNumInputView {
     
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if touches.first?.view != tableView {
-//            dismiss()
-//        }
-        dismiss()
+        if touches.first?.view != contentBgView {
+            dismiss()
+        }
     }
     
     public func show() {
-        createUI()
-        UIApplication.shared.keyWindow?.addSubview(self)
+        textField.text = ""
+        //        createUI()
+        UIApplication.shared.windows.first { $0.isKeyWindow }?.addSubview(self)
     }
     
     public func dismiss() {
         self.removeFromSuperview()
     }
-
+    
 }

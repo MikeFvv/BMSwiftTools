@@ -43,6 +43,8 @@
 		5E274703282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */; };
 		5E274706282B9B1A00C2D686 /* GiftPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */; };
 		5E274708282BAFAA00C2D686 /* GiftNumInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */; };
+		5E27470B282BD68B00C2D686 /* JGGKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */; };
+		5E27470D282BD7AC00C2D686 /* KeyBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */; };
 		5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76180E2828B3A200BD5E69 /* HomeViewController.swift */; };
 		5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618102828B3B400BD5E69 /* MeViewController.swift */; };
 		5E7618132828B3C500BD5E69 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618122828B3C500BD5E69 /* LiveViewController.swift */; };
@@ -140,6 +142,8 @@
 		5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithImageAndTitleExtension.swift; sourceTree = "<group>"; };
 		5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPopMenu.swift; sourceTree = "<group>"; };
 		5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftNumInputView.swift; sourceTree = "<group>"; };
+		5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGGKeyboardView.swift; sourceTree = "<group>"; };
+		5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardCell.swift; sourceTree = "<group>"; };
 		5E76180E2828B3A200BD5E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E7618102828B3B400BD5E69 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		5E7618122828B3C500BD5E69 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -328,6 +332,8 @@
 				5E274666282A88D900C2D686 /* GiveBtnView.swift */,
 				5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */,
 				5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */,
+				5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */,
+				5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
 			);
 			path = Main;
@@ -737,6 +743,7 @@
 				5E2746F8282A94B700C2D686 /* JFPopupAnimation.swift in Sources */,
 				5E2746EE282A94B700C2D686 /* JFAlertView+UIViewController.swift in Sources */,
 				5E274708282BAFAA00C2D686 /* GiftNumInputView.swift in Sources */,
+				5E27470D282BD7AC00C2D686 /* KeyBoardCell.swift in Sources */,
 				5E2746F0282A94B700C2D686 /* JFToastView+Objc.swift in Sources */,
 				5E2746F4282A94B700C2D686 /* UIImage+JFColor.swift in Sources */,
 				5EFD9E17280814960026F04F /* DispathQueue+HXTools.swift in Sources */,
@@ -762,6 +769,7 @@
 				5E2746EC282A94B700C2D686 /* JFAlertView.swift in Sources */,
 				5EFD9E1D280814960026F04F /* HXGlobalFuncs.swift in Sources */,
 				5E274667282A88D900C2D686 /* GiveBtnView.swift in Sources */,
+				5E27470B282BD68B00C2D686 /* JGGKeyboardView.swift in Sources */,
 				5E2746F6282A94B700C2D686 /* Size+Extenison.swift in Sources */,
 				5E2746E7282A94B700C2D686 /* JFPopupActionSheetView.swift in Sources */,
 				5E2746E8282A94B700C2D686 /* JFPopupAction.swift in Sources */,
