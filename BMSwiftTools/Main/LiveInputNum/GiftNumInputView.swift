@@ -156,6 +156,7 @@ extension GiftNumInputView {
     
     public func show() {
         textField.text = ""
+       let _ = textField.becomeFirstResponder()
         //        createUI()
         UIApplication.shared.windows.first { $0.isKeyWindow }?.addSubview(self)
     }

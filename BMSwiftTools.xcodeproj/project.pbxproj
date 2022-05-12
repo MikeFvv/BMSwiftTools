@@ -317,6 +317,18 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		5E27470E282CABCD00C2D686 /* LiveInputNum */ = {
+			isa = PBXGroup;
+			children = (
+				5E274666282A88D900C2D686 /* GiveBtnView.swift */,
+				5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */,
+				5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */,
+				5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */,
+				5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */,
+			);
+			path = LiveInputNum;
+			sourceTree = "<group>";
+		};
 		5E76180D2828B36C00BD5E69 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,11 +341,7 @@
 				5E274700282B560200C2D686 /* BMButton.swift */,
 				5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */,
 				5E274628282A6F5E00C2D686 /* DemoViewController.swift */,
-				5E274666282A88D900C2D686 /* GiveBtnView.swift */,
-				5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */,
-				5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */,
-				5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */,
-				5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */,
+				5E27470E282CABCD00C2D686 /* LiveInputNum */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
 			);
 			path = Main;

@@ -60,6 +60,8 @@ target 'BMSwiftTools' do
 pod 'MBProgressHUD', '~> 1.2.0'
 #pod 'MBProgressHUD+JDragon'
 
+pod 'IQKeyboardManagerSwift'
+
 
 # YYKit
 # pod 'YYKit'

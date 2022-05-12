@@ -21,7 +21,7 @@ class DemoViewController: UIViewController {
     }()
     var popMenu:GiftPopMenu!
 
-    private lazy var giftNumInputView : GiftNumInputView = {
+    private lazy var giftNumView : GiftNumInputView = {
         let instance = GiftNumInputView()
         instance.delegate = self
         return instance
@@ -72,8 +72,8 @@ class DemoViewController: UIViewController {
     
     
     func inputKeyboard() {
-        giftNumInputView.contentFrame = CGRect(x: 0, y: 550, width: self.view.frame.size.width, height: 50)
-        giftNumInputView.show()
+        giftNumView.contentFrame = CGRect(x: 0, y: ScreenHeight-50-BottomHomeHeight, width: ScreenWidth, height: 50)
+        giftNumView.show()
         giveBtnView.numLabel.text = "1"
         
     }
