@@ -14,7 +14,7 @@
 		5E274617282A2F7E00C2D686 /* BMTestTextInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274616282A2F7E00C2D686 /* BMTestTextInputController.swift */; };
 		5E274627282A385E00C2D686 /* OCBMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274626282A385E00C2D686 /* OCBMTextField.m */; };
 		5E274629282A6F5E00C2D686 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274628282A6F5E00C2D686 /* DemoViewController.swift */; };
-		5E274667282A88D900C2D686 /* GiveBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274666282A88D900C2D686 /* GiveBtnView.swift */; };
+		5E274667282A88D900C2D686 /* GiftSendBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274666282A88D900C2D686 /* GiftSendBtnView.swift */; };
 		5E2746E7282A94B700C2D686 /* JFPopupActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2746CC282A94B700C2D686 /* JFPopupActionSheetView.swift */; };
 		5E2746E8282A94B700C2D686 /* JFPopupAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2746CD282A94B700C2D686 /* JFPopupAction.swift */; };
 		5E2746E9282A94B700C2D686 /* JFPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2746CE282A94B700C2D686 /* JFPopupView.swift */; };
@@ -45,6 +45,7 @@
 		5E274708282BAFAA00C2D686 /* GiftNumInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */; };
 		5E27470B282BD68B00C2D686 /* JGGKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */; };
 		5E27470D282BD7AC00C2D686 /* KeyBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */; };
+		5E274724282CDC0C00C2D686 /* WZZKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274723282CDC0C00C2D686 /* WZZKeyboardManager.m */; };
 		5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76180E2828B3A200BD5E69 /* HomeViewController.swift */; };
 		5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618102828B3B400BD5E69 /* MeViewController.swift */; };
 		5E7618132828B3C500BD5E69 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618122828B3C500BD5E69 /* LiveViewController.swift */; };
@@ -63,6 +64,17 @@
 		5E7AFFF2280571A70090A07A /* BMSwiftToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFF1280571A70090A07A /* BMSwiftToolsTests.swift */; };
 		5E7AFFFC280571A70090A07A /* BMSwiftToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFFB280571A70090A07A /* BMSwiftToolsUITests.swift */; };
 		5E7AFFFE280571A70090A07A /* BMSwiftToolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7AFFFD280571A70090A07A /* BMSwiftToolsUITestsLaunchTests.swift */; };
+		5E8C078A283772BD00DCDC5B /* AVPIPKitUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C077F283772BC00DCDC5B /* AVPIPKitUsable.swift */; };
+		5E8C078B283772BD00DCDC5B /* AVPIPKitVideoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0780283772BC00DCDC5B /* AVPIPKitVideoProvider.swift */; };
+		5E8C078C283772BD00DCDC5B /* UIViewController+Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0781283772BC00DCDC5B /* UIViewController+Associated.swift */; };
+		5E8C078D283772BD00DCDC5B /* AVPIPKitRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0782283772BC00DCDC5B /* AVPIPKitRenderer.swift */; };
+		5E8C078E283772BD00DCDC5B /* AVPIPKitUsable+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0783283772BC00DCDC5B /* AVPIPKitUsable+UIKit.swift */; };
+		5E8C078F283772BD00DCDC5B /* AVPIPKitVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0784283772BC00DCDC5B /* AVPIPKitVideoController.swift */; };
+		5E8C0790283772BD00DCDC5B /* UIView+Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0785283772BC00DCDC5B /* UIView+Associated.swift */; };
+		5E8C0791283772BD00DCDC5B /* PIPKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0786283772BC00DCDC5B /* PIPKit.swift */; };
+		5E8C0792283772BD00DCDC5B /* PIPKitEventDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0787283772BC00DCDC5B /* PIPKitEventDispatcher.swift */; };
+		5E8C0793283772BD00DCDC5B /* PIPUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0788283772BD00DCDC5B /* PIPUsable.swift */; };
+		5E8C0794283772BD00DCDC5B /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C0789283772BD00DCDC5B /* UIWindow+Extension.swift */; };
 		5EA008C8281A735F008E1406 /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA008C7281A735F008E1406 /* StringManager.swift */; };
 		5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD48812805BB13005371AA /* BMConstraintsController.swift */; };
 		5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E02280814960026F04F /* UIImage+HXTools.swift */; };
@@ -113,7 +125,7 @@
 		5E274625282A385E00C2D686 /* OCBMTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCBMTextField.h; sourceTree = "<group>"; };
 		5E274626282A385E00C2D686 /* OCBMTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCBMTextField.m; sourceTree = "<group>"; };
 		5E274628282A6F5E00C2D686 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
-		5E274666282A88D900C2D686 /* GiveBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveBtnView.swift; sourceTree = "<group>"; };
+		5E274666282A88D900C2D686 /* GiftSendBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftSendBtnView.swift; sourceTree = "<group>"; };
 		5E2746CC282A94B700C2D686 /* JFPopupActionSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPopupActionSheetView.swift; sourceTree = "<group>"; };
 		5E2746CD282A94B700C2D686 /* JFPopupAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPopupAction.swift; sourceTree = "<group>"; };
 		5E2746CE282A94B700C2D686 /* JFPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPopupView.swift; sourceTree = "<group>"; };
@@ -144,6 +156,8 @@
 		5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftNumInputView.swift; sourceTree = "<group>"; };
 		5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGGKeyboardView.swift; sourceTree = "<group>"; };
 		5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardCell.swift; sourceTree = "<group>"; };
+		5E274722282CDC0C00C2D686 /* WZZKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZKeyboardManager.h; sourceTree = "<group>"; };
+		5E274723282CDC0C00C2D686 /* WZZKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZKeyboardManager.m; sourceTree = "<group>"; };
 		5E76180E2828B3A200BD5E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E7618102828B3B400BD5E69 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		5E7618122828B3C500BD5E69 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +182,17 @@
 		5E7AFFF7280571A70090A07A /* BMSwiftToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMSwiftToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7AFFFB280571A70090A07A /* BMSwiftToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMSwiftToolsUITests.swift; sourceTree = "<group>"; };
 		5E7AFFFD280571A70090A07A /* BMSwiftToolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMSwiftToolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E8C077F283772BC00DCDC5B /* AVPIPKitUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPIPKitUsable.swift; sourceTree = "<group>"; };
+		5E8C0780283772BC00DCDC5B /* AVPIPKitVideoProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPIPKitVideoProvider.swift; sourceTree = "<group>"; };
+		5E8C0781283772BC00DCDC5B /* UIViewController+Associated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Associated.swift"; sourceTree = "<group>"; };
+		5E8C0782283772BC00DCDC5B /* AVPIPKitRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPIPKitRenderer.swift; sourceTree = "<group>"; };
+		5E8C0783283772BC00DCDC5B /* AVPIPKitUsable+UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPIPKitUsable+UIKit.swift"; sourceTree = "<group>"; };
+		5E8C0784283772BC00DCDC5B /* AVPIPKitVideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPIPKitVideoController.swift; sourceTree = "<group>"; };
+		5E8C0785283772BC00DCDC5B /* UIView+Associated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Associated.swift"; sourceTree = "<group>"; };
+		5E8C0786283772BC00DCDC5B /* PIPKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPKit.swift; sourceTree = "<group>"; };
+		5E8C0787283772BC00DCDC5B /* PIPKitEventDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPKitEventDispatcher.swift; sourceTree = "<group>"; };
+		5E8C0788283772BD00DCDC5B /* PIPUsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIPUsable.swift; sourceTree = "<group>"; };
+		5E8C0789283772BD00DCDC5B /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		5EA008C7281A735F008E1406 /* StringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		5EAD48812805BB13005371AA /* BMConstraintsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMConstraintsController.swift; sourceTree = "<group>"; };
 		5EFD9E02280814960026F04F /* UIImage+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+HXTools.swift"; sourceTree = "<group>"; };
@@ -317,21 +342,33 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		5E27470E282CABCD00C2D686 /* LiveInputNum */ = {
+		5E27470E282CABCD00C2D686 /* LiveGiftInputNum */ = {
 			isa = PBXGroup;
 			children = (
-				5E274666282A88D900C2D686 /* GiveBtnView.swift */,
+				5E274721282CDC0C00C2D686 /* WZZKeyboardManager */,
+				5E274628282A6F5E00C2D686 /* DemoViewController.swift */,
+				5E274666282A88D900C2D686 /* GiftSendBtnView.swift */,
 				5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */,
 				5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */,
 				5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */,
 				5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */,
 			);
-			path = LiveInputNum;
+			path = LiveGiftInputNum;
+			sourceTree = "<group>";
+		};
+		5E274721282CDC0C00C2D686 /* WZZKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				5E274722282CDC0C00C2D686 /* WZZKeyboardManager.h */,
+				5E274723282CDC0C00C2D686 /* WZZKeyboardManager.m */,
+			);
+			path = WZZKeyboardManager;
 			sourceTree = "<group>";
 		};
 		5E76180D2828B36C00BD5E69 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5E8C077E283772A900DCDC5B /* PIPKit */,
 				5E76181F2828B78900BD5E69 /* Model */,
 				5E76181E2828B6EE00BD5E69 /* Base */,
 				5E76180E2828B3A200BD5E69 /* HomeViewController.swift */,
@@ -340,8 +377,7 @@
 				5E7618182828B45600BD5E69 /* API.swift */,
 				5E274700282B560200C2D686 /* BMButton.swift */,
 				5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */,
-				5E274628282A6F5E00C2D686 /* DemoViewController.swift */,
-				5E27470E282CABCD00C2D686 /* LiveInputNum */,
+				5E27470E282CABCD00C2D686 /* LiveGiftInputNum */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
 			);
 			path = Main;
@@ -433,6 +469,24 @@
 				5E7AFFFD280571A70090A07A /* BMSwiftToolsUITestsLaunchTests.swift */,
 			);
 			path = BMSwiftToolsUITests;
+			sourceTree = "<group>";
+		};
+		5E8C077E283772A900DCDC5B /* PIPKit */ = {
+			isa = PBXGroup;
+			children = (
+				5E8C0782283772BC00DCDC5B /* AVPIPKitRenderer.swift */,
+				5E8C077F283772BC00DCDC5B /* AVPIPKitUsable.swift */,
+				5E8C0783283772BC00DCDC5B /* AVPIPKitUsable+UIKit.swift */,
+				5E8C0784283772BC00DCDC5B /* AVPIPKitVideoController.swift */,
+				5E8C0780283772BC00DCDC5B /* AVPIPKitVideoProvider.swift */,
+				5E8C0786283772BC00DCDC5B /* PIPKit.swift */,
+				5E8C0787283772BC00DCDC5B /* PIPKitEventDispatcher.swift */,
+				5E8C0788283772BD00DCDC5B /* PIPUsable.swift */,
+				5E8C0785283772BC00DCDC5B /* UIView+Associated.swift */,
+				5E8C0781283772BC00DCDC5B /* UIViewController+Associated.swift */,
+				5E8C0789283772BD00DCDC5B /* UIWindow+Extension.swift */,
+			);
+			path = PIPKit;
 			sourceTree = "<group>";
 		};
 		5EA008C6281A72C5008E1406 /* 字符串操作 */ = {
@@ -739,9 +793,11 @@
 				5E2746EF282A94B700C2D686 /* JFToastQueueTask.swift in Sources */,
 				5EFD9E15280814960026F04F /* String+HXTools.swift in Sources */,
 				5E274627282A385E00C2D686 /* OCBMTextField.m in Sources */,
+				5E8C0793283772BD00DCDC5B /* PIPUsable.swift in Sources */,
 				5E274613282A2E5C00C2D686 /* BMTextField.swift in Sources */,
 				5E27460A282A0D9000C2D686 /* TupleRegex.swift in Sources */,
 				5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */,
+				5E8C078B283772BD00DCDC5B /* AVPIPKitVideoProvider.swift in Sources */,
 				5EFD9E1A280814960026F04F /* HXAlertTool.swift in Sources */,
 				5E7AFFDB280571A50090A07A /* AppDelegate.swift in Sources */,
 				5E2746F7282A94B700C2D686 /* JFPopup.swift in Sources */,
@@ -760,28 +816,38 @@
 				5EFD9E2A280817300026F04F /* Device.swift in Sources */,
 				5EFD9E282808171C0026F04F /* UserDefault.swift in Sources */,
 				5E7AFFDD280571A50090A07A /* SceneDelegate.swift in Sources */,
+				5E274724282CDC0C00C2D686 /* WZZKeyboardManager.m in Sources */,
 				5E2746F9282A94B700C2D686 /* UIViewContoller+JFPopup.swift in Sources */,
 				5EFD9E1B280814960026F04F /* HXReuseable.swift in Sources */,
+				5E8C078A283772BD00DCDC5B /* AVPIPKitUsable.swift in Sources */,
 				5E2746F2282A94B700C2D686 /* JFPopupController.swift in Sources */,
 				5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */,
 				5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */,
+				5E8C0792283772BD00DCDC5B /* PIPKitEventDispatcher.swift in Sources */,
 				5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */,
 				5E2746E9282A94B700C2D686 /* JFPopupView.swift in Sources */,
+				5E8C0790283772BD00DCDC5B /* UIView+Associated.swift in Sources */,
 				5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */,
 				5E2746F1282A94B700C2D686 /* JFToastView.swift in Sources */,
 				5E274617282A2F7E00C2D686 /* BMTestTextInputController.swift in Sources */,
 				5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */,
 				5E274614282A2E5C00C2D686 /* BMTextInput+Extension.swift in Sources */,
+				5E8C0794283772BD00DCDC5B /* UIWindow+Extension.swift in Sources */,
 				5EA008C8281A735F008E1406 /* StringManager.swift in Sources */,
 				5E7618232828B7B100BD5E69 /* ExampleModel.swift in Sources */,
+				5E8C0791283772BD00DCDC5B /* PIPKit.swift in Sources */,
 				5E2746EC282A94B700C2D686 /* JFAlertView.swift in Sources */,
+				5E8C078D283772BD00DCDC5B /* AVPIPKitRenderer.swift in Sources */,
 				5EFD9E1D280814960026F04F /* HXGlobalFuncs.swift in Sources */,
-				5E274667282A88D900C2D686 /* GiveBtnView.swift in Sources */,
+				5E274667282A88D900C2D686 /* GiftSendBtnView.swift in Sources */,
+				5E8C078F283772BD00DCDC5B /* AVPIPKitVideoController.swift in Sources */,
+				5E8C078C283772BD00DCDC5B /* UIViewController+Associated.swift in Sources */,
 				5E27470B282BD68B00C2D686 /* JGGKeyboardView.swift in Sources */,
 				5E2746F6282A94B700C2D686 /* Size+Extenison.swift in Sources */,
 				5E2746E7282A94B700C2D686 /* JFPopupActionSheetView.swift in Sources */,
 				5E2746E8282A94B700C2D686 /* JFPopupAction.swift in Sources */,
 				5EFD9E26280817100026F04F /* Define.swift in Sources */,
+				5E8C078E283772BD00DCDC5B /* AVPIPKitUsable+UIKit.swift in Sources */,
 				5EFD9E19280814960026F04F /* Date+HXTools.swift in Sources */,
 				5E274706282B9B1A00C2D686 /* GiftPopMenu.swift in Sources */,
 				5E2746EA282A94B700C2D686 /* UIView+JFPopup.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  GiveBtnView.swift
+//  GiftSendBtnView.swift
 //  BMSwiftTools
 //
 //  Created by BLOM on 5/10/22.
@@ -8,16 +8,16 @@
 import UIKit
 
 
-protocol GiveBtnViewDelegate: NSObjectProtocol {
+protocol GiftSendBtnViewDelegate: NSObjectProtocol {
     func giveBtnClick()
     func selectedListGiftNum()
 }
 
 
 
-class GiveBtnView: UIView {
+class GiftSendBtnView: UIView {
     
-    weak var delegate: GiveBtnViewDelegate?
+    weak var delegate: GiftSendBtnViewDelegate?
     
     private lazy var giveBtn: UIButton = {
         let instance = UIButton(type: .custom)

@@ -50,7 +50,7 @@ class ExampleModelName    : Convertible {
     var id: Int = 0
     var user: User!
     //驼峰转换
-//    func kj_modelKey(from property: Property) -> ModelPropertyKey {
-//        return property.name.kj.underlineCased()
-//    }
+    func kj_modelKey(from property: Property) -> ModelPropertyKey {
+        return property.name.kj.underlineCased()
+    }
 }

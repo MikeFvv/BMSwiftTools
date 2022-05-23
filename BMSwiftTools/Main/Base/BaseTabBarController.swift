@@ -21,7 +21,7 @@ class BaseTabBarController: UITabBarController {
         setValue(BaseTabBar(), forKey: "tabBar")
         
         //设置底部导航栏的颜色
-        tabBar.barTintColor = UIColor.white
+        tabBar.barTintColor = UIColor.green
         
 //        addChild("首页", "wifi", "wifi", HomeViewController.self)
         addChild("首页", "wifi", "wifi", DemoViewController.self)

@@ -13,6 +13,8 @@ class MeViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .blue
+        
+//        PIPKit.isPIP
     }
     
 
