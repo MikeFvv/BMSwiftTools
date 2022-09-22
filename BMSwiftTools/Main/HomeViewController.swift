@@ -141,4 +141,43 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    func testDemo() {
+        
+
+        let str = "Hello,World"
+        // 1 字符串转Int Double Float
+        let str1 = "966"
+        // 转Int
+        let val1 = Int(str1)
+        // 转Double
+        let val2 = Double(str1)
+        // 转float
+        let val3 = Float(str1)
+
+        // 如果是66.0 转 Int，则需要先转为Double 类型再将其转为Int类型
+        let val4 = "66.0";
+        let count = Double(val4)
+        let val4_int  =  Int(count!)
+
+
+        print(val3!);
+
+        // 2 数字转为字符串
+        let num1 = 66
+        let str2 = "\(num1)"
+        // 如果是Int 类型的话 直接进行转
+        let str3 = String(num1)
+
+        // 如果是Double 类型的话 可以通过以下方式进行转换
+        let num11 = 66.0
+        let str4 = String(num11)
+
+        // 3 数字相互转换
+        let num2 = 66.0
+        // Double 转为 Int
+        let num3 = Int(num2)
+
+
+    }
 }

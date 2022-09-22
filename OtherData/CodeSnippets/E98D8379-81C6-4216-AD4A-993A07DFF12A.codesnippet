@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sspopAlert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@objc func popAlert4() {
+            let alert = UIAlertController(title: "更换头像", message: "请选择头像来源", preferredStyle: UIAlertController.Style.actionSheet)
+            let action1 = UIAlertAction(title: "相册", style: UIAlertAction.Style.default) { (action) in
+                print("用户点击了 相册 按钮")
+            }
+            let action2 = UIAlertAction(title: "相机", style: UIAlertAction.Style.default) { (action) in
+                print("用户点击了 相机 按钮")
+            }
+            let action3 = UIAlertAction(title: "取消", style: UIAlertAction.Style.cancel) { (action) in
+                print("用户点击了 取消 按钮")
+            }
+            alert.addAction(action1)
+            alert.addAction(action2)
+            alert.addAction(action3)
+            
+            self.present(alert, animated: true) {
+                print("弹出了提示框-4")
+            }
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E98D8379-81C6-4216-AD4A-993A07DFF12A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>简单系统弹框</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sspopAlert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

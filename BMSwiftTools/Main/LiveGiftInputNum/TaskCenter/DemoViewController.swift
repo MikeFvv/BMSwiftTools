@@ -32,7 +32,7 @@ class DemoViewController: UIViewController {
     
     private lazy var headerView: TaskHeaderView = {
         let instance = TaskHeaderView()
-        instance.backgroundColor = .white
+        instance.backgroundColor = .clear
         return instance
     }()
     

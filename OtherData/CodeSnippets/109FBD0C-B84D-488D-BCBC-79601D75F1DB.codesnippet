@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssAddTouchEvents</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func addTouchEvents() {
+        let tapGes = UITapGestureRecognizer(target: self, action: #selector(touchEvents(tgr:)))
+        //设置属性
+        //tap 手势一共两个属性，一个是设置轻拍次数，一个是设置点击手指个数
+        //设置轻拍次数
+        tapGes.numberOfTapsRequired = 10;
+        //设置手指字数
+        tapGes.numberOfTouchesRequired = 1;
+        self.view.addGestureRecognizer(tapGes)
+    }
+    
+    @objc func touchEvents(tgr: UITapGestureRecognizer) {
+        let controller = GiftDownloadController()
+        controller.view.backgroundColor = .white
+        controller.title = "礼物下载列表"
+        self.navigationController?.pushViewController(controller, animated: true)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>109FBD0C-B84D-488D-BCBC-79601D75F1DB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssAddTouchEvents</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

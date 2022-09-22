@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssTextField</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var textField: BMTextField = {
+    let instance = BMTextField()
+    instance.borderStyle = .none
+    instance.backgroundColor = .clear
+    instance.placeholder = "请输入赠送数量"
+    instance.textColor = UIColor.black
+    instance.layer.borderWidth = 1.0
+    instance.layer.borderColor = UIColor.white.withAlphaComponent(0.4).cgColor
+    instance.layer.cornerRadius = 5
+    instance.font = .systemFont(ofSize: 12, weight: .medium)
+    instance.keyboardType = .phonePad
+    instance.returnKeyType = .done
+    instance.clearButtonMode = .always
+//        let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: 40))
+//        instance.leftView = leftView
+    instance.leftViewMode = .whileEditing
+    
+    //        // 左视图
+    //        let leftView = UILabel()
+    //        leftView.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+    //        leftView.text="持卡人"
+    //        leftView.textColor=UIColor.black
+    //        leftView.font=UIFont.systemFont(ofSize: 18)
+    //        // 右视图
+    //        let rightButton = UIButton(type: .infoDark)
+    //        rightButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+    //        // 设置左右视图
+    //        instance.leftView=leftView
+    //        instance.rightView=rightButton
+    //        // 设置视图模式
+    //        instance.rightViewMode = .always
+    //        instance.leftViewMode = .always
+
+    
+    
+    //        instance.addTarget(self, action: #selector(handleTextEndEditing(_:)), for: .editingDidEndOnExit)
+    //        instance.addTarget(self, action: #selector(handleTextFieldEditing(textField:)), for: .editingChanged)
+    //        instance.attributedPlaceholder = NSAttributedString(string: "设置房间标题", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white.withAlphaComponent(0.6)])
+    
+    return instance
+}()
+    
+    addSubview(textField)
+    textField.snp.makeConstraints { make in
+        make.left.equalTo(editThumbButton.snp.right).offset(24.resize)
+        make.right.equalToSuperview().inset(24.resize)
+        make.top.equalTo(editThumbButton)
+        make.height.equalTo(40)
+    }
+    
+    
+    @objc private func handleTextEndEditing(_ textField: UITextField) {
+        endEditing(true)
+        delegate?.roomDidEndEditing(name: textField.text ?? "")
+    }
+    
+    @objc private func handleTextFieldEditing(textField: UITextField) {
+        guard let text = textField.text else {  return }
+        guard textField.markedTextRange == nil else { return }
+        if text.count &gt; 10 {
+            let startIndex = text.startIndex
+            let endIndex = text.index(startIndex, offsetBy: 10)
+            textField.text = String(text[startIndex..&lt;endIndex])
+        }
+        delegate?.roomDidEndEditing(name: textField.text ?? "")
+    }
+    
+    protocol CreateLiveVideoHeaderProtocol: AnyObject {
+        func roomDidSelect(thumb image: UIImage)
+        func roomDidEndEditing(name: String)
+        func roomDidClick(type isPrivate: Bool)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A8FF73CB-3C4E-4D45-BA29-3D944A8ACC31</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ssTextField</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssTextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

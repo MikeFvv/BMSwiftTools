@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>setupUI</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>setupUI()
+
+private func setupUI() {
+        contentView.addSubview(titleLabel)
+        titleLabel.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalTo(contentView.snp.top).offset(35.resize)
+        }
+        
+        contentView.addSubview(cancelRequestButton)
+        cancelRequestButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(70.resize)
+            make.width.equalTo(319.resize)
+            make.height.equalTo(44.resize)
+        }
+        
+        contentView.addSubview(cancelButton)
+        cancelButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalToSuperview().offset(128.resize)
+            make.width.equalTo(319.resize)
+            make.height.equalTo(44.resize)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-28.5)
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4B86D4A4-36ED-41A1-B3E1-0F9FCB53BB1E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>setupUI</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>setupUI</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

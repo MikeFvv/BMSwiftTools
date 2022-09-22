@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>sslineView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let lineView = UIView()
+    lineView.backgroundColor = .red
+    contentView.addSubview(lineView)
+    lineView.snp.makeConstraints { make in
+        make.left.equalTo(12)
+        make.right.equalTo(-12)
+        make.height.equalTo(1)
+        make.bottom.equalTo(0)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B74A801E-7915-4837-994C-1EAEAA4F8050</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建分隔线</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sslineView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

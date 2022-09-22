@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var hideBgView : UIView = {
+    let instance = UIView()
+    instance.backgroundColor = .white
+    instance.layer.borderWidth = 1;
+    instance.layer.borderColor = UIColor.green.cgColor
+    // tag -&gt; 0:为收起状态 1:为展开状态
+    instance.tag = 0
+    return instance
+}()
+
+
+let bgBox = UIView()
+    bgBox.backgroundColor = .green
+    superview.addSubview(bgBox)
+
+    bgBox.snp.makeConstraints { (make) -&gt; Void in
+        make.top.equalTo(superview).offset(20)
+        make.left.equalTo(superview).offset(20)
+        make.bottom.equalTo(superview).offset(-20)
+        make.right.equalTo(superview).offset(-20)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2827A3F-604F-4458-8296-A9EE25C37CE3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIView创建-</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

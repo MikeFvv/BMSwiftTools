@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssImageView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>lazy var imgView: UIImageView = {
+        let instance = UIImageView()
+    instance.image = UIImage(named: "defaultavatar")
+//    instance.layer.cornerRadius  = 5
+//    instance.layer.masksToBounds = true
+    
+        return instance
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0445C215-F71F-4987-BF29-BCC8A3F629B4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIImageView创建-延迟加载</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssImageView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

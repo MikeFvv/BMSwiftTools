@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssLabel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var seatLabel: UILabel = {
+    let instance = UILabel()
+    instance.text = "麦位"
+    instance.textColor = .black
+    instance.font = .systemFont(ofSize: 12, weight: .medium)
+    
+//        instance.backgroundColor = .blue
+//        instance.numberOfLines = 0
+//        instance.lineBreakMode = .byClipping
+    return instance
+}()
+
+// 与上面分开
+contentView.addSubview(seatLabel)
+seatLabel.snp.makeConstraints { make in
+    make.top.equalTo(contentView).offset(20)
+    make.leading.equalTo(contentView).offset(20)
+    make.trailing.equalTo(contentView).offset(20)
+    make.bottom.equalTo(contentView).offset(20)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8A21A84C-A226-42AC-8EA2-E4C17A58F62D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UILabel创建-延迟加载</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssLabel</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

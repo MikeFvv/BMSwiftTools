@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssProgressView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var levelProgressView: UIProgressView = {
+        let instance = UIProgressView(progressViewStyle: UIProgressView.Style.default)
+        instance.progress = 0.3
+        // 设置已走过的进度条颜色
+        instance.progressTintColor = .green
+        // 设置未走过的进度条颜色
+        instance.trackTintColor = .gray
+//        // 设置的已走过进度的进度条图片
+//        instance.progressImage = UIImage(named: "left-progress")
+//        // 设置的未走过进度的进度条图片
+//        instance.trackImage = UIImage(named: "right-progress")
+        
+        return instance
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E833F4AB-607A-4F94-856F-B0BAC84E6865</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ssProgressView进度条</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssProgressView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -38,6 +38,8 @@ target 'BMSwiftTools' do
 #  pod 'SDWebImage'
   pod 'Kingfisher'
 #  pod 'KingfisherWebP'   # 如果需要这种格式的图片
+
+#  pod "ESTabBarController-swift"
   
   
   # 模型对象存储Sqlite 数据库
@@ -73,9 +75,12 @@ pod 'IQKeyboardManagerSwift'
 ##  pod 'YYAsyncLayer'
 #pod 'YYCategories'
 
+pod 'UIGradient'
 
 
-
+#  pod 'TXLiteAVSDK_Professional', '~> 10.3.11513'
+#  pod 'SuperPlayer'
+  
 
 # ################## 以下使用效果待验证 ###################
 

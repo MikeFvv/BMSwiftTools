@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ssTableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var tableView: UITableView = {
+        let instance = UITableView(frame: .zero, style: .plain)
+    instance.showsVerticalScrollIndicator = false
+    instance.showsHorizontalScrollIndicator = false
+    instance.delegate = self
+    instance.dataSource = self
+    instance.contentInsetAdjustmentBehavior = .never
+    instance.estimatedSectionHeaderHeight = 0
+    instance.estimatedSectionFooterHeight = 0
+        
+    instance.tableFooterView = UIView()
+        
+    instance.rowHeight = UITableView.automaticDimension;
+    instance.estimatedRowHeight = 44;
+    instance.register(NewsRecommendTableViewCell.self, forCellReuseIdentifier: NewsRecommendTableViewCell.reuseId)
+        
+        return instance
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>12F3F317-B6FC-42D5-B4E6-CFC9626B8EEA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UITableView创建-延迟加载</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ssTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
