@@ -36,6 +36,7 @@
 		5E27470B282BD68B00C2D686 /* JGGKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */; };
 		5E27470D282BD7AC00C2D686 /* KeyBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */; };
 		5E274724282CDC0C00C2D686 /* WZZKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E274723282CDC0C00C2D686 /* WZZKeyboardManager.m */; };
+		5E48B6C628DC441A0044B196 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E48B6C528DC441A0044B196 /* MD5.swift */; };
 		5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76180E2828B3A200BD5E69 /* HomeViewController.swift */; };
 		5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618102828B3B400BD5E69 /* MeViewController.swift */; };
 		5E7618132828B3C500BD5E69 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7618122828B3C500BD5E69 /* LiveViewController.swift */; };
@@ -133,6 +134,7 @@
 		5E27470C282BD7AC00C2D686 /* KeyBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoardCell.swift; sourceTree = "<group>"; };
 		5E274722282CDC0C00C2D686 /* WZZKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZZKeyboardManager.h; sourceTree = "<group>"; };
 		5E274723282CDC0C00C2D686 /* WZZKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZZKeyboardManager.m; sourceTree = "<group>"; };
+		5E48B6C528DC441A0044B196 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		5E76180E2828B3A200BD5E69 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5E7618102828B3B400BD5E69 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		5E7618122828B3C500BD5E69 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -367,6 +369,7 @@
 				5E7A000F280578B50090A07A /* CodeSnippet(代码块) */,
 				5EFD9E1F280816B60026F04F /* Resources */,
 				5E7AFFDA280571A50090A07A /* AppDelegate.swift */,
+				5E48B6C528DC441A0044B196 /* MD5.swift */,
 				5E7AFFDC280571A50090A07A /* SceneDelegate.swift */,
 				5E7AFFDE280571A50090A07A /* ViewController.swift */,
 				5EAD48812805BB13005371AA /* BMConstraintsController.swift */,
@@ -737,6 +740,7 @@
 				5E101F932849CD720014EE61 /* ExampleViewController.swift in Sources */,
 				5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */,
 				5E101F7F2849CBCE0014EE61 /* ExampleProvider.swift in Sources */,
+				5E48B6C628DC441A0044B196 /* MD5.swift in Sources */,
 				5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */,
 				5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */,
 				5E9383C4283C87EA00C5D383 /* TaskTableViewCell.swift in Sources */,
