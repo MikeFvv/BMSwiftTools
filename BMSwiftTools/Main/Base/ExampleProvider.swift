@@ -18,7 +18,7 @@ enum ExampleProvider {
         let v2 = ExampleViewController()
         let v3 = ExampleViewController()
         let v4 = ExampleViewController()
-        let v5 = ExampleViewController()
+        let v5 = iPhoneSafeSize()
         v1.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         v2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
         v3.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Photo", image: UIImage(named: "photo"), selectedImage: UIImage(named: "photo_1"))

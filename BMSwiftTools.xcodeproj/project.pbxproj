@@ -63,6 +63,7 @@
 		5E9383C4283C87EA00C5D383 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9383C3283C87EA00C5D383 /* TaskTableViewCell.swift */; };
 		5EA008C8281A735F008E1406 /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA008C7281A735F008E1406 /* StringManager.swift */; };
 		5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD48812805BB13005371AA /* BMConstraintsController.swift */; };
+		5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */; };
 		5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E02280814960026F04F /* UIImage+HXTools.swift */; };
 		5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E03280814960026F04F /* UIColor+HXTools.swift */; };
 		5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E04280814960026F04F /* UIView+HXTools.swift */; };
@@ -167,6 +168,7 @@
 		5E9383C3283C87EA00C5D383 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5EA008C7281A735F008E1406 /* StringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		5EAD48812805BB13005371AA /* BMConstraintsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMConstraintsController.swift; sourceTree = "<group>"; };
+		5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSafeSize.swift; sourceTree = "<group>"; };
 		5EFD9E02280814960026F04F /* UIImage+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E03280814960026F04F /* UIColor+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E04280814960026F04F /* UIView+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+HXTools.swift"; sourceTree = "<group>"; };
@@ -411,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9383BB283BA03C00C5D383 /* Protocols.swift */,
+				5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -753,6 +756,7 @@
 				5E101F8E2849CCF30014EE61 /* ESTabBarItem.swift in Sources */,
 				5EA008C8281A735F008E1406 /* StringManager.swift in Sources */,
 				5E7618232828B7B100BD5E69 /* ExampleModel.swift in Sources */,
+				5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSize.swift in Sources */,
 				5EFD9E1D280814960026F04F /* HXGlobalFuncs.swift in Sources */,
 				5E274667282A88D900C2D686 /* GiftSendBtnView.swift in Sources */,
 				5E101F902849CCF30014EE61 /* ESTabBar.swift in Sources */,
