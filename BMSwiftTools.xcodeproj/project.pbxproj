@@ -63,6 +63,8 @@
 		5E9383C4283C87EA00C5D383 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9383C3283C87EA00C5D383 /* TaskTableViewCell.swift */; };
 		5EA008C8281A735F008E1406 /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA008C7281A735F008E1406 /* StringManager.swift */; };
 		5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD48812805BB13005371AA /* BMConstraintsController.swift */; };
+		5EC725D028EBFD58007D4703 /* FloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725CF28EBFD58007D4703 /* FloatButton.swift */; };
+		5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D128EC0427007D4703 /* BMBubbleView.swift */; };
 		5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */; };
 		5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E02280814960026F04F /* UIImage+HXTools.swift */; };
 		5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E03280814960026F04F /* UIColor+HXTools.swift */; };
@@ -168,6 +170,8 @@
 		5E9383C3283C87EA00C5D383 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		5EA008C7281A735F008E1406 /* StringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		5EAD48812805BB13005371AA /* BMConstraintsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMConstraintsController.swift; sourceTree = "<group>"; };
+		5EC725CF28EBFD58007D4703 /* FloatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatButton.swift; sourceTree = "<group>"; };
+		5EC725D128EC0427007D4703 /* BMBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBubbleView.swift; sourceTree = "<group>"; };
 		5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSafeSize.swift; sourceTree = "<group>"; };
 		5EFD9E02280814960026F04F /* UIImage+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E03280814960026F04F /* UIColor+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HXTools.swift"; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 		5E76180D2828B36C00BD5E69 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				5EC725D328EC1CF5007D4703 /* 悬浮按钮 */,
 				5E76181F2828B78900BD5E69 /* Model */,
 				5E76181E2828B6EE00BD5E69 /* Base */,
 				5E76180E2828B3A200BD5E69 /* HomeViewController.swift */,
@@ -365,13 +370,11 @@
 		5E7AFFD9280571A50090A07A /* BMSwiftTools */ = {
 			isa = PBXGroup;
 			children = (
-				5E9383BA283BA02200C5D383 /* Common */,
-				5E76180D2828B36C00BD5E69 /* Main */,
 				5EFD9DFE280814870026F04F /* Expand */,
+				5E76180D2828B36C00BD5E69 /* Main */,
 				5E7A000F280578B50090A07A /* CodeSnippet(代码块) */,
 				5EFD9E1F280816B60026F04F /* Resources */,
 				5E7AFFDA280571A50090A07A /* AppDelegate.swift */,
-				5E48B6C528DC441A0044B196 /* MD5.swift */,
 				5E7AFFDC280571A50090A07A /* SceneDelegate.swift */,
 				5E7AFFDE280571A50090A07A /* ViewController.swift */,
 				5EAD48812805BB13005371AA /* BMConstraintsController.swift */,
@@ -427,9 +430,19 @@
 			path = "字符串操作";
 			sourceTree = "<group>";
 		};
+		5EC725D328EC1CF5007D4703 /* 悬浮按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				5EC725CF28EBFD58007D4703 /* FloatButton.swift */,
+				5EC725D128EC0427007D4703 /* BMBubbleView.swift */,
+			);
+			path = "悬浮按钮";
+			sourceTree = "<group>";
+		};
 		5EFD9DFE280814870026F04F /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				5E9383BA283BA02200C5D383 /* Common */,
 				5E27460F282A2E5C00C2D686 /* BMTextInput */,
 				5EFD9DFF280814960026F04F /* Tools */,
 				5E7618242828D9BF00BD5E69 /* Extensions */,
@@ -442,6 +455,7 @@
 		5EFD9DFF280814960026F04F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5E48B6C528DC441A0044B196 /* MD5.swift */,
 				5EFD9E0B280814960026F04F /* Custom */,
 				5EFD9E0E280814960026F04F /* Global */,
 			);
@@ -713,6 +727,7 @@
 				5E274615282A2E5C00C2D686 /* BMTextView.swift in Sources */,
 				5EFD9E18280814960026F04F /* Dictionary+HXTools.swift in Sources */,
 				5E274701282B560300C2D686 /* BMButton.swift in Sources */,
+				5EC725D028EBFD58007D4703 /* FloatButton.swift in Sources */,
 				5E7618192828B45600BD5E69 /* API.swift in Sources */,
 				5E9383B7283B9EBF00C5D383 /* Models.swift in Sources */,
 				5EFD9E15280814960026F04F /* String+HXTools.swift in Sources */,
@@ -748,6 +763,7 @@
 				5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */,
 				5E9383C4283C87EA00C5D383 /* TaskTableViewCell.swift in Sources */,
 				5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */,
+				5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */,
 				5E274617282A2F7E00C2D686 /* BMTestTextInputController.swift in Sources */,
 				5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */,
 				5E274614282A2E5C00C2D686 /* BMTextInput+Extension.swift in Sources */,
