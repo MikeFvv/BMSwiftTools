@@ -15,7 +15,7 @@ enum ExampleProvider {
         let tabBarController = ESTabBarController()
         tabBarController.tabBar.backgroundColor = .white
         let v1 = ExampleViewController()
-        let v2 = ExampleViewController()
+        let v2 = RadarDiffusionAnimationontroller()
         let v3 = ExampleViewController()
         let v4 = MeViewController()
         let v5 = iPhoneSafeSize()

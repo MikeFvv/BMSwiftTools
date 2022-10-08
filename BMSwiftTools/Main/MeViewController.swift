@@ -46,28 +46,35 @@ class MeViewController: UIViewController {
         
 //        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
         
-        bubbleBgView.addSubview(bubbleGiftBagIcon)
-        bubbleGiftBagIcon.frame = CGRect(x: 0, y: 0, width: 68, height: 68)
+//        bubbleBgView.addSubview(bubbleGiftBagIcon)
+//        bubbleGiftBagIcon.frame = CGRect(x: 0, y: 0, width: 68, height: 68)
+//
+//        let bubbleCloseBtn = UIButton(type: .custom)
+//        bubbleCloseBtn.setBackgroundImage(UIImage(named: "live_bbclose"), for: .normal)
+//        bubbleCloseBtn.addTarget(self, action: #selector(bubbleCloseBtnClicked), for: .touchUpInside)
+//        bubbleBgView.addSubview(bubbleCloseBtn)
+//        bubbleCloseBtn.frame = CGRect(x: 68/2-20/2, y: 68+5, width: 20, height: 20)
+//
+//
+//        bubbleWindow = BMBubbleWindow(customView: bubbleBgView, margin: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), level: UIWindow.Level.alert+1,backBlock: {[weak self] in
+//            guard let strongSelf =  self else{
+//                return
+//            }
+//            //            strongSelf.jumpRegisterLogin()
+//        })
+//        bubbleWindow?.show()
+//        bubbleWindow?.positionY = 300
+//        bubbleWindow?.position = .Right
+//
+//        bubbleWindow?.backgroundColor = UIColor.red
         
-        let bubbleCloseBtn = UIButton(type: .custom)
-        bubbleCloseBtn.setBackgroundImage(UIImage(named: "live_bbclose"), for: .normal)
-        bubbleCloseBtn.addTarget(self, action: #selector(bubbleCloseBtnClicked), for: .touchUpInside)
-        bubbleBgView.addSubview(bubbleCloseBtn)
-        bubbleCloseBtn.frame = CGRect(x: 68/2-20/2, y: 68+5, width: 20, height: 20)
         
+        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+        let dragView = YLDragView.init(frame: CGRect(x: ScreenWidth, y: ScreenHeight-200, width: 100, height: 100))
+        dragView.freeRect = CGRect(x: 10, y: 100, width: ScreenWidth-10*2, height: ScreenHeight-100-30)
+        window?.addSubview(dragView)
         
-        bubbleWindow = BMBubbleWindow(customView: bubbleBgView, margin: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), level: UIWindow.Level.alert+1,backBlock: {[weak self] in
-            guard let strongSelf =  self else{
-                return
-            }
-            //            strongSelf.jumpRegisterLogin()
-        })
-        bubbleWindow?.show()
-        bubbleWindow?.positionY = 300
-        bubbleWindow?.position = .Right
-        
-        bubbleWindow?.backgroundColor = UIColor.red
-        
+        dragView.backgroundColor = UIColor.red
     }
     
     
@@ -81,5 +88,9 @@ class MeViewController: UIViewController {
     func singleClick() {
         debugPrint("点击事件调用Success!")
     }
+    
+    
+    
+    
     
 }
