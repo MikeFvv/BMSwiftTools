@@ -20,6 +20,14 @@
 		5E101F932849CD720014EE61 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E101F922849CD720014EE61 /* ExampleViewController.swift */; };
 		5E101F952849CE080014EE61 /* ExampleBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E101F942849CE080014EE61 /* ExampleBouncesContentView.swift */; };
 		5E101F972849CE4A0014EE61 /* ExampleBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E101F962849CE4A0014EE61 /* ExampleBasicContentView.swift */; };
+		5E13967D28F15BFE00A5FFBE /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13967B28F15BFD00A5FFBE /* CommonEnum.swift */; };
+		5E13967E28F15BFE00A5FFBE /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13967C28F15BFE00A5FFBE /* CommonConstant.swift */; };
+		5E13968028F1645300A5FFBE /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13967F28F1645300A5FFBE /* String+Size.swift */; };
+		5E13968228F1647100A5FFBE /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13968128F1647100A5FFBE /* UIFont+Extension.swift */; };
+		5E13968628F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13968528F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift */; };
+		5E13968B28F16B4000A5FFBE /* UIGradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13968828F16B3F00A5FFBE /* UIGradientExtension.swift */; };
+		5E13968C28F16B4000A5FFBE /* UIGradientHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13968928F16B3F00A5FFBE /* UIGradientHelper.swift */; };
+		5E13968D28F16B4000A5FFBE /* GradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E13968A28F16B3F00A5FFBE /* GradientLayer.swift */; };
 		5E27460A282A0D9000C2D686 /* TupleRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274609282A0D9000C2D686 /* TupleRegex.swift */; };
 		5E274613282A2E5C00C2D686 /* BMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274610282A2E5C00C2D686 /* BMTextField.swift */; };
 		5E274614282A2E5C00C2D686 /* BMTextInput+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274611282A2E5C00C2D686 /* BMTextInput+Extension.swift */; };
@@ -30,7 +38,6 @@
 		5E274667282A88D900C2D686 /* GiftSendBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274666282A88D900C2D686 /* GiftSendBtnView.swift */; };
 		5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2746FE282A94C000C2D686 /* UIColor+Extension.swift */; };
 		5E274701282B560300C2D686 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274700282B560200C2D686 /* BMButton.swift */; };
-		5E274703282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */; };
 		5E274706282B9B1A00C2D686 /* GiftPopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */; };
 		5E274708282BAFAA00C2D686 /* GiftNumInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */; };
 		5E27470B282BD68B00C2D686 /* JGGKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */; };
@@ -70,7 +77,7 @@
 		5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD48812805BB13005371AA /* BMConstraintsController.swift */; };
 		5EC725D028EBFD58007D4703 /* FloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725CF28EBFD58007D4703 /* FloatButton.swift */; };
 		5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D128EC0427007D4703 /* BMBubbleView.swift */; };
-		5EC725D928EC2285007D4703 /* YLDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D828EC2285007D4703 /* YLDragView.swift */; };
+		5EC725D928EC2285007D4703 /* BMDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D828EC2285007D4703 /* BMDragView.swift */; };
 		5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */; };
 		5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E02280814960026F04F /* UIImage+HXTools.swift */; };
 		5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E03280814960026F04F /* UIColor+HXTools.swift */; };
@@ -125,6 +132,14 @@
 		5E101F922849CD720014EE61 /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		5E101F942849CE080014EE61 /* ExampleBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBouncesContentView.swift; sourceTree = "<group>"; };
 		5E101F962849CE4A0014EE61 /* ExampleBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleBasicContentView.swift; sourceTree = "<group>"; };
+		5E13967B28F15BFD00A5FFBE /* CommonEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
+		5E13967C28F15BFE00A5FFBE /* CommonConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
+		5E13967F28F1645300A5FFBE /* String+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Size.swift"; sourceTree = "<group>"; };
+		5E13968128F1647100A5FFBE /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		5E13968528F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithImageAndTitleExtension.swift; sourceTree = "<group>"; };
+		5E13968828F16B3F00A5FFBE /* UIGradientExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradientExtension.swift; sourceTree = "<group>"; };
+		5E13968928F16B3F00A5FFBE /* UIGradientHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradientHelper.swift; sourceTree = "<group>"; };
+		5E13968A28F16B3F00A5FFBE /* GradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientLayer.swift; sourceTree = "<group>"; };
 		5E274609282A0D9000C2D686 /* TupleRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleRegex.swift; sourceTree = "<group>"; };
 		5E274610282A2E5C00C2D686 /* BMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMTextField.swift; sourceTree = "<group>"; };
 		5E274611282A2E5C00C2D686 /* BMTextInput+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BMTextInput+Extension.swift"; sourceTree = "<group>"; };
@@ -136,7 +151,6 @@
 		5E274666282A88D900C2D686 /* GiftSendBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftSendBtnView.swift; sourceTree = "<group>"; };
 		5E2746FE282A94C000C2D686 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5E274700282B560200C2D686 /* BMButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
-		5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithImageAndTitleExtension.swift; sourceTree = "<group>"; };
 		5E274705282B9B1A00C2D686 /* GiftPopMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftPopMenu.swift; sourceTree = "<group>"; };
 		5E274707282BAFAA00C2D686 /* GiftNumInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftNumInputView.swift; sourceTree = "<group>"; };
 		5E27470A282BD68B00C2D686 /* JGGKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JGGKeyboardView.swift; sourceTree = "<group>"; };
@@ -183,7 +197,7 @@
 		5EAD48812805BB13005371AA /* BMConstraintsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMConstraintsController.swift; sourceTree = "<group>"; };
 		5EC725CF28EBFD58007D4703 /* FloatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatButton.swift; sourceTree = "<group>"; };
 		5EC725D128EC0427007D4703 /* BMBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBubbleView.swift; sourceTree = "<group>"; };
-		5EC725D828EC2285007D4703 /* YLDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLDragView.swift; sourceTree = "<group>"; };
+		5EC725D828EC2285007D4703 /* BMDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMDragView.swift; sourceTree = "<group>"; };
 		5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSafeSize.swift; sourceTree = "<group>"; };
 		5EFD9E02280814960026F04F /* UIImage+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E03280814960026F04F /* UIColor+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HXTools.swift"; sourceTree = "<group>"; };
@@ -255,6 +269,29 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		5E13967A28F15BE500A5FFBE /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				5EFD9E29280817300026F04F /* Device.swift */,
+				5EFD9E272808171C0026F04F /* UserDefault.swift */,
+				5EFD9E25280817100026F04F /* Define.swift */,
+				5EFD9E232808170B0026F04F /* Version.swift */,
+				5E13967C28F15BFE00A5FFBE /* CommonConstant.swift */,
+				5E13967B28F15BFD00A5FFBE /* CommonEnum.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		5E13968728F16B3F00A5FFBE /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				5E13968828F16B3F00A5FFBE /* UIGradientExtension.swift */,
+				5E13968928F16B3F00A5FFBE /* UIGradientHelper.swift */,
+				5E13968A28F16B3F00A5FFBE /* GradientLayer.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		5E274608282A0D9000C2D686 /* SwiftRegex5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,7 +349,7 @@
 				5E7618102828B3B400BD5E69 /* MeViewController.swift */,
 				5E7618182828B45600BD5E69 /* API.swift */,
 				5E274700282B560200C2D686 /* BMButton.swift */,
-				5E274702282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift */,
+				5E13968528F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift */,
 				5E27470E282CABCD00C2D686 /* LiveGiftInputNum */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
 			);
@@ -344,6 +381,7 @@
 		5E7618242828D9BF00BD5E69 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5E13968728F16B3F00A5FFBE /* Color */,
 				5EFD9E01280814960026F04F /* UIKit */,
 				5EFD9E05280814960026F04F /* Foundation */,
 			);
@@ -466,7 +504,7 @@
 		5EC725D328EC1CF5007D4703 /* 悬浮按钮 */ = {
 			isa = PBXGroup;
 			children = (
-				5EC725D828EC2285007D4703 /* YLDragView.swift */,
+				5EC725D828EC2285007D4703 /* BMDragView.swift */,
 				5EC725CF28EBFD58007D4703 /* FloatButton.swift */,
 				5EC725D128EC0427007D4703 /* BMBubbleView.swift */,
 			);
@@ -476,12 +514,12 @@
 		5EFD9DFE280814870026F04F /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				5E13967A28F15BE500A5FFBE /* Global */,
 				5E9383BA283BA02200C5D383 /* Common */,
 				5E27460F282A2E5C00C2D686 /* BMTextInput */,
 				5EFD9DFF280814960026F04F /* Tools */,
 				5E7618242828D9BF00BD5E69 /* Extensions */,
 				5EA008C6281A72C5008E1406 /* 字符串操作 */,
-				5EFD9E22280816FD0026F04F /* Util */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -489,9 +527,10 @@
 		5EFD9DFF280814960026F04F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5EFD9E0F280814960026F04F /* HXGlobalTool.swift */,
+				5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */,
 				5E48B6C528DC441A0044B196 /* MD5.swift */,
 				5EFD9E0B280814960026F04F /* Custom */,
-				5EFD9E0E280814960026F04F /* Global */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -510,6 +549,8 @@
 		5EFD9E05280814960026F04F /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				5E13968128F1647100A5FFBE /* UIFont+Extension.swift */,
+				5E13967F28F1645300A5FFBE /* String+Size.swift */,
 				5E7618252828D9CC00BD5E69 /* Date+Extensions.swift */,
 				5EFD9E06280814960026F04F /* String+HXTools.swift */,
 				5EFD9E07280814960026F04F /* Array+HXTools.swift */,
@@ -529,15 +570,6 @@
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		5EFD9E0E280814960026F04F /* Global */ = {
-			isa = PBXGroup;
-			children = (
-				5EFD9E0F280814960026F04F /* HXGlobalTool.swift */,
-				5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */,
-			);
-			path = Global;
-			sourceTree = "<group>";
-		};
 		5EFD9E1F280816B60026F04F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,17 +581,6 @@
 				5EFD9E20280816B60026F04F /* Images.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		5EFD9E22280816FD0026F04F /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				5EFD9E29280817300026F04F /* Device.swift */,
-				5EFD9E272808171C0026F04F /* UserDefault.swift */,
-				5EFD9E25280817100026F04F /* Define.swift */,
-				5EFD9E232808170B0026F04F /* Version.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 		F9E682CAA375C7BDE4052DE9 /* Frameworks */ = {
@@ -750,7 +771,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E101F7D2849CBC40014EE61 /* ExampleNavigationController.swift in Sources */,
-				5E274703282B5B1C00C2D686 /* ButtonWithImageAndTitleExtension.swift in Sources */,
 				5EFD9E16280814960026F04F /* Array+HXTools.swift in Sources */,
 				5E101F8F2849CCF30014EE61 /* ESTabBarItemBadgeView.swift in Sources */,
 				5E7AFFDF280571A50090A07A /* ViewController.swift in Sources */,
@@ -764,16 +784,19 @@
 				5EC725D028EBFD58007D4703 /* FloatButton.swift in Sources */,
 				5E7618192828B45600BD5E69 /* API.swift in Sources */,
 				5E9383B7283B9EBF00C5D383 /* Models.swift in Sources */,
+				5E13968C28F16B4000A5FFBE /* UIGradientHelper.swift in Sources */,
 				5EFD9E15280814960026F04F /* String+HXTools.swift in Sources */,
 				5E274627282A385E00C2D686 /* OCBMTextField.m in Sources */,
 				5E101F972849CE4A0014EE61 /* ExampleBasicContentView.swift in Sources */,
 				5EA3F54A28F103BD007AAB60 /* RectRadarAnimationView.swift in Sources */,
 				5E274613282A2E5C00C2D686 /* BMTextField.swift in Sources */,
 				5E27460A282A0D9000C2D686 /* TupleRegex.swift in Sources */,
+				5E13968228F1647100A5FFBE /* UIFont+Extension.swift in Sources */,
 				5E101F8B2849CCF30014EE61 /* ESTabBarItemMoreContentView.swift in Sources */,
 				5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */,
 				5EFD9E1A280814960026F04F /* HXAlertTool.swift in Sources */,
 				5E7AFFDB280571A50090A07A /* AppDelegate.swift in Sources */,
+				5E13968028F1645300A5FFBE /* String+Size.swift in Sources */,
 				5E9383BE283C765800C5D383 /* TaskHeaderView.swift in Sources */,
 				5E101F952849CE080014EE61 /* ExampleBouncesContentView.swift in Sources */,
 				5EA3F54B28F103BD007AAB60 /* RadarDiffusionAnimationontroller.swift in Sources */,
@@ -785,9 +808,10 @@
 				5EA3F54428F101FC007AAB60 /* Array+Ext.swift in Sources */,
 				5E9383C2283C829100C5D383 /* TaskCollectionViewCell.swift in Sources */,
 				5EFD9E17280814960026F04F /* DispathQueue+HXTools.swift in Sources */,
-				5EC725D928EC2285007D4703 /* YLDragView.swift in Sources */,
+				5EC725D928EC2285007D4703 /* BMDragView.swift in Sources */,
 				5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */,
 				5EFD9E242808170B0026F04F /* Version.swift in Sources */,
+				5E13968D28F16B4000A5FFBE /* GradientLayer.swift in Sources */,
 				5EFD9E2A280817300026F04F /* Device.swift in Sources */,
 				5EFD9E282808171C0026F04F /* UserDefault.swift in Sources */,
 				5E7AFFDD280571A50090A07A /* SceneDelegate.swift in Sources */,
@@ -796,14 +820,18 @@
 				5E101F932849CD720014EE61 /* ExampleViewController.swift in Sources */,
 				5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */,
 				5E101F7F2849CBCE0014EE61 /* ExampleProvider.swift in Sources */,
+				5E13967E28F15BFE00A5FFBE /* CommonConstant.swift in Sources */,
 				5E48B6C628DC441A0044B196 /* MD5.swift in Sources */,
 				5E7618112828B3B400BD5E69 /* MeViewController.swift in Sources */,
 				5EA3F54328F101FC007AAB60 /* UIEdgeInsets+Ext.swift in Sources */,
 				5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */,
+				5E13967D28F15BFE00A5FFBE /* CommonEnum.swift in Sources */,
 				5E9383C4283C87EA00C5D383 /* TaskTableViewCell.swift in Sources */,
 				5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */,
 				5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */,
 				5E274617282A2F7E00C2D686 /* BMTestTextInputController.swift in Sources */,
+				5E13968628F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift in Sources */,
+				5E13968B28F16B4000A5FFBE /* UIGradientExtension.swift in Sources */,
 				5EAD48822805BB13005371AA /* BMConstraintsController.swift in Sources */,
 				5E274614282A2E5C00C2D686 /* BMTextInput+Extension.swift in Sources */,
 				5E9383BC283BA03C00C5D383 /* Protocols.swift in Sources */,

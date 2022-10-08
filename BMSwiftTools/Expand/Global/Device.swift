@@ -8,14 +8,6 @@
 
 import Foundation
 import UIKit
-/// 判断是否iphoneX 带刘海
-public func IsBangs_iPhone() -> Bool {
-    return BottomHomeHeight > 0
-}
-
-public var isX: Bool {
-    return BottomHomeHeight > 0
-}
 
 ///判断是否iPad
 public let IsIPAD: Bool = (UIDevice.current.userInterfaceIdiom == .pad) ? true: false

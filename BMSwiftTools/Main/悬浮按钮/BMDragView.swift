@@ -1,25 +1,25 @@
 //
-//  YLDragView.swift
-//  Driver
+//  BMDragView.swift
+//  venom
 //
-//  Created by ym on 2020/11/23.
+//  Created by BLOM on 10/8/22.
 //
 
 import UIKit
 
-enum YLDragDirection {
+enum BMDragDirection {
     case All
     case Horizontal
     case Vertical
 }
 
-typealias YLDragViewBlock = (_ drageView: YLDragView) -> Void;
+typealias BMDragViewBlock = (_ drageView: BMDragView) -> Void;
 
-class YLDragView: UIView {
-    public var clickDragViewBlock: YLDragViewBlock?;
-    public var beginDragBlock: YLDragViewBlock?;
-    public var duringDragBlock: YLDragViewBlock?;
-    public var endDragBlock: YLDragViewBlock?;
+class BMDragView: UIView {
+    public var clickDragViewBlock: BMDragViewBlock?;
+    public var beginDragBlock: BMDragViewBlock?;
+    public var duringDragBlock: BMDragViewBlock?;
+    public var endDragBlock: BMDragViewBlock?;
     /**
      是不是能拖曳，默认为YES
      YES，能拖曳
@@ -39,7 +39,7 @@ class YLDragView: UIView {
     /**
      拖曳的方向，默认为any，任意方向
      */
-    public var dragDirection: YLDragDirection = .All;
+    public var dragDirection: BMDragDirection = .All;
     
     /**
      是否自动黏贴边界，默认为YES,
@@ -53,8 +53,8 @@ class YLDragView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame);
-        self.layer.cornerRadius = frame.size.height/2.0;
-        self.layer.masksToBounds = true;
+//        self.layer.cornerRadius = frame.size.height/2.0;
+//        self.layer.masksToBounds = true;
         self.backgroundColor = UIColor.clear;
         self.clipsToBounds = true;
         self.setUp();
