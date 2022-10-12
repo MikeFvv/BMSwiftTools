@@ -107,19 +107,19 @@ class MeViewController: UIViewController {
     
     
     private lazy var scrollView: UIScrollView = {
-        let view = UIScrollView()
-//        view.alwaysBounceVertical = true  // 开启竖直方向回弹效果
-//        view.alwaysBounceHorizontal = true  // 开启水平方向回弹效果
-//        view.showsVerticalScrollIndicator = false  // 显示竖直方向滚动条
-//        view.showsHorizontalScrollIndicator = false // 显示水平方向滚动条
+        let instance = UIScrollView()
+//        instance.alwaysBounceVertical = true  // 开启竖直方向回弹效果
+//        instance.alwaysBounceHorizontal = true  // 开启水平方向回弹效果
+//        instance.showsVerticalScrollIndicator = false  // 显示竖直方向滚动条
+//        instance.showsHorizontalScrollIndicator = false // 显示水平方向滚动条
         //        view.bounds = true  // 是否可拉出空白区域
-//        view.isPagingEnabled = true  // 开启自动定位分页效果
+//        instance.isPagingEnabled = true  // 开启自动定位分页效果
         
         if #available(iOS 11.0, *) {
-            view.contentInsetAdjustmentBehavior = .never
+            instance.contentInsetAdjustmentBehavior = .never
         }
-//        view.delegate = self
-        return view
+//        instance.delegate = self
+        return instance
     }()
     
     private lazy var contentView : UIView = {
@@ -129,9 +129,7 @@ class MeViewController: UIViewController {
     }()
     
     
-    let image1 = UIView()
-    let image2 = UIView()
-    let stackView = UIStackView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -141,50 +139,55 @@ class MeViewController: UIViewController {
         createFloatButtonUI()
         createDragView()
         
-//        createScrollViewUI()
-        
-        createScrollViewUI2()
+        createAdaptiveScrollViewUI()
+
+//        createFixedSizeScrollViewUI()
     }
     
-    func createScrollViewUI2() {
+    
+    /// 设定contentView大小
+    func createFixedSizeScrollViewUI() {
         
 //        scrollView.contentSize = CGSize(width: ScreenWidth, height: 2000)
         
-        scrollView.backgroundColor = .cyan
+        scrollView.backgroundColor = .green
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
             make.edges.equalTo(view).inset(UIEdgeInsets.zero)
         }
         
+        
         scrollView.addSubview(contentView)
+        // 设置内容视图contentView的位置，需要设置6个约束，上下左右+宽高, 4个不行
         contentView.snp.makeConstraints { make in
-//            make.top.left.equalToSuperview()
-////            make.edges.equalTo(scrollView).inset(UIEdgeInsets.zero)
-//            make.width.equalTo(400)
-//            make.height.equalTo(2000)
-            
-            make.edges.equalTo(scrollView).inset(UIEdgeInsets.zero)
+            make.top.left.bottom.right.width.equalToSuperview() // 上下左右高度都跟scrollView一样
 //            make.height.equalToSuperview().multipliedBy(2)  // 父控件的2倍
             make.height.equalTo(2000)
         }
         
+        // 加2个视图 看滚动屏幕变化
         let bgBox = UIView(frame: CGRect(x: 50, y: 200, width: 200, height: 100))
-        bgBox.backgroundColor = .green
+        bgBox.backgroundColor = .purple
         contentView.addSubview(bgBox)
-        
         
         let bgBox2 = UIView(frame: CGRect(x: 50, y: 2000-500, width: 200, height: 100))
         bgBox2.backgroundColor = .orange
         contentView.addSubview(bgBox2)
     }
-    
         
     
-    func createScrollViewUI() {
+    
+    /// 根据内容自动撑大contentView大小
+    func createAdaptiveScrollViewUI() {
         view.backgroundColor = .gray
         
         scrollView.backgroundColor = .brown
         contentView.backgroundColor = .red
+        
+        
+        let image1 = UIView()
+        let image2 = UIView()
+        let stackView = UIStackView()
         
         image1.backgroundColor = .yellow
         image2.backgroundColor = .green
@@ -202,7 +205,7 @@ class MeViewController: UIViewController {
 
         view.addSubview(scrollView)
         scrollView.snp.makeConstraints {
-            $0.top.bottom.equalTo(view.safeAreaLayoutGuide)
+            $0.top.bottom.equalTo(view.safeAreaLayoutGuide)  // 安全区域 例如导航栏+tabbar
             $0.leading.trailing.equalToSuperview()
         }
 
