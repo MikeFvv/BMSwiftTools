@@ -112,6 +112,10 @@ pod 'UIGradient'
 #    pod 'M80AttributedLabel'
 
 
+pod 'LookinServer', :configurations => ['Debug']
+
+
+
 end
 
 

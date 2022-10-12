@@ -78,7 +78,7 @@
 		5EC725D028EBFD58007D4703 /* FloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725CF28EBFD58007D4703 /* FloatButton.swift */; };
 		5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D128EC0427007D4703 /* BMBubbleView.swift */; };
 		5EC725D928EC2285007D4703 /* BMDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D828EC2285007D4703 /* BMDragView.swift */; };
-		5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */; };
+		5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift */; };
 		5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E02280814960026F04F /* UIImage+HXTools.swift */; };
 		5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E03280814960026F04F /* UIColor+HXTools.swift */; };
 		5EFD9E14280814960026F04F /* UIView+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E04280814960026F04F /* UIView+HXTools.swift */; };
@@ -198,7 +198,7 @@
 		5EC725CF28EBFD58007D4703 /* FloatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatButton.swift; sourceTree = "<group>"; };
 		5EC725D128EC0427007D4703 /* BMBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBubbleView.swift; sourceTree = "<group>"; };
 		5EC725D828EC2285007D4703 /* BMDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMDragView.swift; sourceTree = "<group>"; };
-		5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSafeSize.swift; sourceTree = "<group>"; };
+		5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSafeSizeController.swift; sourceTree = "<group>"; };
 		5EFD9E02280814960026F04F /* UIImage+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E03280814960026F04F /* UIColor+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E04280814960026F04F /* UIView+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+HXTools.swift"; sourceTree = "<group>"; };
@@ -272,6 +272,7 @@
 		5E13967A28F15BE500A5FFBE /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				5E7618182828B45600BD5E69 /* API.swift */,
 				5EFD9E29280817300026F04F /* Device.swift */,
 				5EFD9E272808171C0026F04F /* UserDefault.swift */,
 				5EFD9E25280817100026F04F /* Define.swift */,
@@ -339,17 +340,13 @@
 		5E76180D2828B36C00BD5E69 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				5EA3F53C28F101FC007AAB60 /* 雷达扩散动画 */,
-				5EC725D328EC1CF5007D4703 /* 悬浮按钮 */,
+				5EC7EBF328F68BB60090419C /* 小功能 */,
 				5E76181F2828B78900BD5E69 /* Model */,
 				5E76181E2828B6EE00BD5E69 /* Base */,
 				5E76180E2828B3A200BD5E69 /* HomeViewController.swift */,
 				5E101F922849CD720014EE61 /* ExampleViewController.swift */,
 				5E7618122828B3C500BD5E69 /* LiveViewController.swift */,
 				5E7618102828B3B400BD5E69 /* MeViewController.swift */,
-				5E7618182828B45600BD5E69 /* API.swift */,
-				5E274700282B560200C2D686 /* BMButton.swift */,
-				5E13968528F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift */,
 				5E27470E282CABCD00C2D686 /* LiveGiftInputNum */,
 				5E76181A2828B47800BD5E69 /* BMSwiftTools-Bridging-Header.h */,
 			);
@@ -467,7 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				5E9383BB283BA03C00C5D383 /* Protocols.swift */,
-				5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSize.swift */,
+				5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -511,12 +508,20 @@
 			path = "悬浮按钮";
 			sourceTree = "<group>";
 		};
+		5EC7EBF328F68BB60090419C /* 小功能 */ = {
+			isa = PBXGroup;
+			children = (
+				5EA3F53C28F101FC007AAB60 /* 雷达扩散动画 */,
+				5EC725D328EC1CF5007D4703 /* 悬浮按钮 */,
+			);
+			path = "小功能";
+			sourceTree = "<group>";
+		};
 		5EFD9DFE280814870026F04F /* Expand */ = {
 			isa = PBXGroup;
 			children = (
 				5E13967A28F15BE500A5FFBE /* Global */,
 				5E9383BA283BA02200C5D383 /* Common */,
-				5E27460F282A2E5C00C2D686 /* BMTextInput */,
 				5EFD9DFF280814960026F04F /* Tools */,
 				5E7618242828D9BF00BD5E69 /* Extensions */,
 				5EA008C6281A72C5008E1406 /* 字符串操作 */,
@@ -527,6 +532,7 @@
 		5EFD9DFF280814960026F04F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5E27460F282A2E5C00C2D686 /* BMTextInput */,
 				5EFD9E0F280814960026F04F /* HXGlobalTool.swift */,
 				5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */,
 				5E48B6C528DC441A0044B196 /* MD5.swift */,
@@ -538,6 +544,8 @@
 		5EFD9E01280814960026F04F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5E274700282B560200C2D686 /* BMButton.swift */,
+				5E13968528F1680D00A5FFBE /* ButtonWithImageAndTitleExtension.swift */,
 				5E2746FE282A94C000C2D686 /* UIColor+Extension.swift */,
 				5EFD9E02280814960026F04F /* UIImage+HXTools.swift */,
 				5EFD9E03280814960026F04F /* UIColor+HXTools.swift */,
@@ -839,7 +847,7 @@
 				5E101F8E2849CCF30014EE61 /* ESTabBarItem.swift in Sources */,
 				5EA008C8281A735F008E1406 /* StringManager.swift in Sources */,
 				5E7618232828B7B100BD5E69 /* ExampleModel.swift in Sources */,
-				5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSize.swift in Sources */,
+				5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift in Sources */,
 				5EFD9E1D280814960026F04F /* HXGlobalFuncs.swift in Sources */,
 				5E274667282A88D900C2D686 /* GiftSendBtnView.swift in Sources */,
 				5E101F902849CCF30014EE61 /* ESTabBar.swift in Sources */,

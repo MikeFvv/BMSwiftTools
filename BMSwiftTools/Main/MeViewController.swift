@@ -104,54 +104,121 @@ class MeViewController: UIViewController {
     
     
     
+    
+    
+    private lazy var scrollView: UIScrollView = {
+        let view = UIScrollView()
+//        view.alwaysBounceVertical = true  // 开启竖直方向回弹效果
+//        view.alwaysBounceHorizontal = true  // 开启水平方向回弹效果
+//        view.showsVerticalScrollIndicator = false  // 显示竖直方向滚动条
+//        view.showsHorizontalScrollIndicator = false // 显示水平方向滚动条
+        //        view.bounds = true  // 是否可拉出空白区域
+//        view.isPagingEnabled = true  // 开启自动定位分页效果
+        
+        if #available(iOS 11.0, *) {
+            view.contentInsetAdjustmentBehavior = .never
+        }
+//        view.delegate = self
+        return view
+    }()
+    
+    private lazy var contentView : UIView = {
+        let instance = UIView()
+        instance.backgroundColor = .red
+        return instance
+    }()
+    
+    
+    let image1 = UIView()
+    let image2 = UIView()
+    let stackView = UIStackView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         
-//            // 布局用到了snpKit，用的时候依据项目本身修改即可
-//            let floatButton = FloatButton(bgColor: UIColor.orange, titleOfButton: "测试")
-//            let firstWindow = UIApplication.shared.windows[0]
-//            firstWindow.addSubview(floatButton)
-//
-//            floatButton.singleClickCallback = { [weak self] in
-//                self?.singleClick()
-//            }
-//            floatButton.snp.makeConstraints { (make) in
-//                make.top.equalTo(80)
-//                make.left.equalTo(20)
-//                make.width.equalTo(80)
-//                make.height.equalTo(50)
-//            }
-        
-//        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
-        
-//        bubbleBgView.addSubview(bubbleGiftBagIcon)
-//        bubbleGiftBagIcon.frame = CGRect(x: 0, y: 0, width: 68, height: 68)
-//
-//        let bubbleCloseBtn = UIButton(type: .custom)
-//        bubbleCloseBtn.setBackgroundImage(UIImage(named: "live_bbclose"), for: .normal)
-//        bubbleCloseBtn.addTarget(self, action: #selector(bubbleCloseBtnClicked), for: .touchUpInside)
-//        bubbleBgView.addSubview(bubbleCloseBtn)
-//        bubbleCloseBtn.frame = CGRect(x: 68/2-20/2, y: 68+5, width: 20, height: 20)
-//
-//
-//        bubbleWindow = BMBubbleWindow(customView: bubbleBgView, margin: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), level: UIWindow.Level.alert+1,backBlock: {[weak self] in
-//            guard let strongSelf =  self else{
-//                return
-//            }
-//            //            strongSelf.jumpRegisterLogin()
-//        })
-//        bubbleWindow?.show()
-//        bubbleWindow?.positionY = 300
-//        bubbleWindow?.position = .Right
-//
-//        bubbleWindow?.backgroundColor = UIColor.red
-        
-        
-        
+        createFloatButtonUI()
         createDragView()
+        
+//        createScrollViewUI()
+        
+        createScrollViewUI2()
     }
+    
+    func createScrollViewUI2() {
+        
+//        scrollView.contentSize = CGSize(width: ScreenWidth, height: 2000)
+        
+        scrollView.backgroundColor = .cyan
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints { make in
+            make.edges.equalTo(view).inset(UIEdgeInsets.zero)
+        }
+        
+        scrollView.addSubview(contentView)
+        contentView.snp.makeConstraints { make in
+//            make.top.left.equalToSuperview()
+////            make.edges.equalTo(scrollView).inset(UIEdgeInsets.zero)
+//            make.width.equalTo(400)
+//            make.height.equalTo(2000)
+            
+            make.edges.equalTo(scrollView).inset(UIEdgeInsets.zero)
+//            make.height.equalToSuperview().multipliedBy(2)  // 父控件的2倍
+            make.height.equalTo(2000)
+        }
+        
+        let bgBox = UIView(frame: CGRect(x: 50, y: 200, width: 200, height: 100))
+        bgBox.backgroundColor = .green
+        contentView.addSubview(bgBox)
+        
+        
+        let bgBox2 = UIView(frame: CGRect(x: 50, y: 2000-500, width: 200, height: 100))
+        bgBox2.backgroundColor = .orange
+        contentView.addSubview(bgBox2)
+    }
+    
+        
+    
+    func createScrollViewUI() {
+        view.backgroundColor = .gray
+        
+        scrollView.backgroundColor = .brown
+        contentView.backgroundColor = .red
+        
+        image1.backgroundColor = .yellow
+        image2.backgroundColor = .green
+
+        stackView.axis = .vertical // 세로스크롤
+//        stackView.axis = .horizontal // 가로스크롤
+        stackView.distribution = .equalSpacing
+        
+        [image1, image2].forEach {
+            stackView.addArrangedSubview($0)
+            $0.snp.makeConstraints {
+                $0.height.equalTo(500)
+            }
+        }
+
+        view.addSubview(scrollView)
+        scrollView.snp.makeConstraints {
+            $0.top.bottom.equalTo(view.safeAreaLayoutGuide)
+            $0.leading.trailing.equalToSuperview()
+        }
+
+        scrollView.addSubview(contentView)
+        contentView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+            $0.width.equalToSuperview()
+        }
+
+        contentView.addSubview(stackView)
+        stackView.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(10)
+        }
+    }
+    
+    
     
     func createDragView() {
         let window = UIApplication.shared.windows.first { $0.isKeyWindow }
@@ -169,6 +236,47 @@ class MeViewController: UIViewController {
         dragBgView.addSubview(jifenButton)
         dragBgView.addSubview(jinjituButton)
         dragBgView.addSubview(jingcaiButton)
+    }
+    
+    func createFloatButtonUI() {
+        //            // 布局用到了snpKit，用的时候依据项目本身修改即可
+        //            let floatButton = FloatButton(bgColor: UIColor.orange, titleOfButton: "测试")
+        //            let firstWindow = UIApplication.shared.windows[0]
+        //            firstWindow.addSubview(floatButton)
+        //
+        //            floatButton.singleClickCallback = { [weak self] in
+        //                self?.singleClick()
+        //            }
+        //            floatButton.snp.makeConstraints { (make) in
+        //                make.top.equalTo(80)
+        //                make.left.equalTo(20)
+        //                make.width.equalTo(80)
+        //                make.height.equalTo(50)
+        //            }
+                
+        //        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+                
+        //        bubbleBgView.addSubview(bubbleGiftBagIcon)
+        //        bubbleGiftBagIcon.frame = CGRect(x: 0, y: 0, width: 68, height: 68)
+        //
+        //        let bubbleCloseBtn = UIButton(type: .custom)
+        //        bubbleCloseBtn.setBackgroundImage(UIImage(named: "live_bbclose"), for: .normal)
+        //        bubbleCloseBtn.addTarget(self, action: #selector(bubbleCloseBtnClicked), for: .touchUpInside)
+        //        bubbleBgView.addSubview(bubbleCloseBtn)
+        //        bubbleCloseBtn.frame = CGRect(x: 68/2-20/2, y: 68+5, width: 20, height: 20)
+        //
+        //
+        //        bubbleWindow = BMBubbleWindow(customView: bubbleBgView, margin: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), level: UIWindow.Level.alert+1,backBlock: {[weak self] in
+        //            guard let strongSelf =  self else{
+        //                return
+        //            }
+        //            //            strongSelf.jumpRegisterLogin()
+        //        })
+        //        bubbleWindow?.show()
+        //        bubbleWindow?.positionY = 300
+        //        bubbleWindow?.position = .Right
+        //
+        //        bubbleWindow?.backgroundColor = UIColor.red
     }
     
     

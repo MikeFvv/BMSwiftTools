@@ -1,5 +1,5 @@
 //
-//  iPhoneSafeSize.swift
+//  iPhoneSafeSizeController.swift
 //  BMSwiftTools
 //
 //  Created by BLOM on 9/27/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class iPhoneSafeSize: UIViewController {
+class iPhoneSafeSizeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,9 +38,6 @@ class iPhoneSafeSize: UIViewController {
         BMLog("111")
     }
     
-
-    
-
 }
 
 
