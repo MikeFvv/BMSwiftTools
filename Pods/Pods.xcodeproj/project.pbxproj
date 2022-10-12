@@ -638,7 +638,7 @@
 		77FE3732C2354FD7FC8837750576B4E6 /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		783391F6ACC683BD753D830D51A94D9D /* IQBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IQBarButtonItem.swift; path = IQKeyboardManagerSwift/IQToolbar/IQBarButtonItem.swift; sourceTree = "<group>"; };
 		7A62733D96D95164E0D6A946D722E541 /* IQKeyboardManager+OrientationNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "IQKeyboardManager+OrientationNotification.swift"; path = "IQKeyboardManagerSwift/IQKeyboardManager+OrientationNotification.swift"; sourceTree = "<group>"; };
-		7A919A38A2233A7CE768D0015A53DE48 /* Pods-BMSwiftTools */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BMSwiftTools"; path = Pods_BMSwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A919A38A2233A7CE768D0015A53DE48 /* Pods_BMSwiftTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMSwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B279DA00800C596423F814CF0CD522F /* UIGradientExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIGradientExtension.swift; path = Sources/UIGradientExtension.swift; sourceTree = "<group>"; };
 		7B53796093E92E4D198A4BB67D05AFF1 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		7B872305780D426B4324F61AB988B74C /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
@@ -678,7 +678,7 @@
 		9BD1DE1405B3977E49EA9264CEA8824F /* Pods-BMSwiftTools-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BMSwiftTools-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9C215E782513EA25C7AD008B5ABEDB2F /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		9CCA4600AAE93FF4816D3D51CFAB311A /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE776EBECC9A7A38E269031FE0C1EF6 /* Type.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Type.swift; path = Sources/KakaJSON/Metadata/Type/Type.swift; sourceTree = "<group>"; };
 		9FEA8FC1036F12DC676439AA122F6E97 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
 		A0C3751ADCEFA57BDA4C24B583E0B66A /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
@@ -961,7 +961,6 @@
 				7450B68E2F5E05A0E76E510D974D608D /* UILayoutSupport+Extensions.swift */,
 				06B5D1F92CD11A91D83C833A75F01290 /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -1021,7 +1020,6 @@
 				8314BC43365A9539D6B017AD54246F58 /* Validation.swift */,
 				4D8EABF6E91006664F35EAED8FB2324B /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1107,7 +1105,6 @@
 				405351DCA4CACE24E19B139347EE0C1D /* WKInterfaceImage+Kingfisher.swift */,
 				ED3A497E120995DA118F71F702BE9FFA /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -1135,7 +1132,6 @@
 				2F8E8F7CD4361EFB18303969B05AAF30 /* UIGradientHelper.swift */,
 				7EA4419251E1CF337B4E58C417B5636D /* Support Files */,
 			);
-			name = UIGradient;
 			path = UIGradient;
 			sourceTree = "<group>";
 		};
@@ -1194,7 +1190,6 @@
 				953D7438EE3D8A4B3D4A6A9358AE2BC7 /* Resources */,
 				16CB4A49F8B0EAF2F0D10015DC7CB124 /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1251,7 +1246,6 @@
 				72C774237DA14BFB83F4268912B5E90B /* Values.swift */,
 				D229472381FDBF943A66E9D9DC5C253F /* Support Files */,
 			);
-			name = KakaJSON;
 			path = KakaJSON;
 			sourceTree = "<group>";
 		};
@@ -1296,7 +1290,6 @@
 				9845D7A2525084AC1E0C6AD5EDFB2D3D /* IQUIViewController+Additions.swift */,
 				D0F784864B8E70060D0532A3CE09764F /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -1325,7 +1318,7 @@
 				C3F44C782D64D7EB20B61CE3844EBFAD /* Kingfisher */,
 				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD */,
 				E49D6D248DD1CEE584E6776B9164A1B2 /* MJRefresh */,
-				7A919A38A2233A7CE768D0015A53DE48 /* Pods-BMSwiftTools */,
+				7A919A38A2233A7CE768D0015A53DE48 /* Pods_BMSwiftTools.framework */,
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 				3E8D9B51C56BD51F8398D713AD5B677E /* UIGradient */,
 			);
@@ -1379,7 +1372,6 @@
 				F33482FD88DA4D2DCD7F2C44D49DE6C7 /* MBProgressHUD.m */,
 				D56B2D200FC202E819169EB357E3A266 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -1503,7 +1495,6 @@
 				0597E7CED8B0FFE54CDFEF1A96AC0873 /* JXSegmentedViewTool.swift */,
 				C1170DE7B0F0D45398E7C57A19EE22B1 /* Support Files */,
 			);
-			name = JXSegmentedView;
 			path = JXSegmentedView;
 			sourceTree = "<group>";
 		};
@@ -1694,7 +1685,7 @@
 			);
 			name = "Pods-BMSwiftTools";
 			productName = Pods_BMSwiftTools;
-			productReference = 7A919A38A2233A7CE768D0015A53DE48 /* Pods-BMSwiftTools */;
+			productReference = 7A919A38A2233A7CE768D0015A53DE48 /* Pods_BMSwiftTools.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */ = {
