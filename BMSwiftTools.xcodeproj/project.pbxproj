@@ -78,6 +78,11 @@
 		5EC725D028EBFD58007D4703 /* FloatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725CF28EBFD58007D4703 /* FloatButton.swift */; };
 		5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D128EC0427007D4703 /* BMBubbleView.swift */; };
 		5EC725D928EC2285007D4703 /* BMDragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC725D828EC2285007D4703 /* BMDragView.swift */; };
+		5ED80BF728F6C50000F9834A /* MatchWCPromotionImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED80BF628F6C50000F9834A /* MatchWCPromotionImageController.swift */; };
+		5ED80BF928F6C52E00F9834A /* NavBarBlackBackCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED80BF828F6C52E00F9834A /* NavBarBlackBackCommonView.swift */; };
+		5ED80BFB28F6C93C00F9834A /* BMAdaptUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED80BFA28F6C93C00F9834A /* BMAdaptUI.swift */; };
+		5ED80BFF28F7EBB200F9834A /* PresentBottomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED80BFE28F7EBB200F9834A /* PresentBottomController.swift */; };
+		5ED80C0128F7EC4400F9834A /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED80C0028F7EC4400F9834A /* BottomViewController.swift */; };
 		5EFA4DA528E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift */; };
 		5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E02280814960026F04F /* UIImage+HXTools.swift */; };
 		5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EFD9E03280814960026F04F /* UIColor+HXTools.swift */; };
@@ -198,6 +203,11 @@
 		5EC725CF28EBFD58007D4703 /* FloatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatButton.swift; sourceTree = "<group>"; };
 		5EC725D128EC0427007D4703 /* BMBubbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMBubbleView.swift; sourceTree = "<group>"; };
 		5EC725D828EC2285007D4703 /* BMDragView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMDragView.swift; sourceTree = "<group>"; };
+		5ED80BF628F6C50000F9834A /* MatchWCPromotionImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchWCPromotionImageController.swift; sourceTree = "<group>"; };
+		5ED80BF828F6C52E00F9834A /* NavBarBlackBackCommonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarBlackBackCommonView.swift; sourceTree = "<group>"; };
+		5ED80BFA28F6C93C00F9834A /* BMAdaptUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMAdaptUI.swift; sourceTree = "<group>"; };
+		5ED80BFE28F7EBB200F9834A /* PresentBottomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentBottomController.swift; sourceTree = "<group>"; };
+		5ED80C0028F7EC4400F9834A /* BottomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
 		5EFA4DA428E2BE5500ABEFC9 /* iPhoneSafeSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneSafeSizeController.swift; sourceTree = "<group>"; };
 		5EFD9E02280814960026F04F /* UIImage+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+HXTools.swift"; sourceTree = "<group>"; };
 		5EFD9E03280814960026F04F /* UIColor+HXTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HXTools.swift"; sourceTree = "<group>"; };
@@ -279,6 +289,7 @@
 				5EFD9E232808170B0026F04F /* Version.swift */,
 				5E13967C28F15BFE00A5FFBE /* CommonConstant.swift */,
 				5E13967B28F15BFD00A5FFBE /* CommonEnum.swift */,
+				5ED80BFA28F6C93C00F9834A /* BMAdaptUI.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -344,7 +355,10 @@
 				5E76181F2828B78900BD5E69 /* Model */,
 				5E76181E2828B6EE00BD5E69 /* Base */,
 				5E76180E2828B3A200BD5E69 /* HomeViewController.swift */,
+				5ED80C0028F7EC4400F9834A /* BottomViewController.swift */,
 				5E101F922849CD720014EE61 /* ExampleViewController.swift */,
+				5ED80BF828F6C52E00F9834A /* NavBarBlackBackCommonView.swift */,
+				5ED80BF628F6C50000F9834A /* MatchWCPromotionImageController.swift */,
 				5E7618122828B3C500BD5E69 /* LiveViewController.swift */,
 				5E7618102828B3B400BD5E69 /* MeViewController.swift */,
 				5E27470E282CABCD00C2D686 /* LiveGiftInputNum */,
@@ -532,6 +546,7 @@
 		5EFD9DFF280814960026F04F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				5ED80BFE28F7EBB200F9834A /* PresentBottomController.swift */,
 				5E27460F282A2E5C00C2D686 /* BMTextInput */,
 				5EFD9E0F280814960026F04F /* HXGlobalTool.swift */,
 				5EFD9E10280814960026F04F /* HXGlobalFuncs.swift */,
@@ -786,6 +801,7 @@
 				5E274629282A6F5E00C2D686 /* DemoViewController.swift in Sources */,
 				5EFD9E13280814960026F04F /* UIColor+HXTools.swift in Sources */,
 				5EFD9E1C280814960026F04F /* HXGlobalTool.swift in Sources */,
+				5ED80BF928F6C52E00F9834A /* NavBarBlackBackCommonView.swift in Sources */,
 				5E274615282A2E5C00C2D686 /* BMTextView.swift in Sources */,
 				5EFD9E18280814960026F04F /* Dictionary+HXTools.swift in Sources */,
 				5E274701282B560300C2D686 /* BMButton.swift in Sources */,
@@ -794,6 +810,7 @@
 				5E9383B7283B9EBF00C5D383 /* Models.swift in Sources */,
 				5E13968C28F16B4000A5FFBE /* UIGradientHelper.swift in Sources */,
 				5EFD9E15280814960026F04F /* String+HXTools.swift in Sources */,
+				5ED80BF728F6C50000F9834A /* MatchWCPromotionImageController.swift in Sources */,
 				5E274627282A385E00C2D686 /* OCBMTextField.m in Sources */,
 				5E101F972849CE4A0014EE61 /* ExampleBasicContentView.swift in Sources */,
 				5EA3F54A28F103BD007AAB60 /* RectRadarAnimationView.swift in Sources */,
@@ -802,6 +819,7 @@
 				5E13968228F1647100A5FFBE /* UIFont+Extension.swift in Sources */,
 				5E101F8B2849CCF30014EE61 /* ESTabBarItemMoreContentView.swift in Sources */,
 				5E76180F2828B3A200BD5E69 /* HomeViewController.swift in Sources */,
+				5ED80BFF28F7EBB200F9834A /* PresentBottomController.swift in Sources */,
 				5EFD9E1A280814960026F04F /* HXAlertTool.swift in Sources */,
 				5E7AFFDB280571A50090A07A /* AppDelegate.swift in Sources */,
 				5E13968028F1645300A5FFBE /* String+Size.swift in Sources */,
@@ -816,6 +834,7 @@
 				5EA3F54428F101FC007AAB60 /* Array+Ext.swift in Sources */,
 				5E9383C2283C829100C5D383 /* TaskCollectionViewCell.swift in Sources */,
 				5EFD9E17280814960026F04F /* DispathQueue+HXTools.swift in Sources */,
+				5ED80BFB28F6C93C00F9834A /* BMAdaptUI.swift in Sources */,
 				5EC725D928EC2285007D4703 /* BMDragView.swift in Sources */,
 				5EFD9E12280814960026F04F /* UIImage+HXTools.swift in Sources */,
 				5EFD9E242808170B0026F04F /* Version.swift in Sources */,
@@ -834,6 +853,7 @@
 				5EA3F54328F101FC007AAB60 /* UIEdgeInsets+Ext.swift in Sources */,
 				5E2746FF282A94C000C2D686 /* UIColor+Extension.swift in Sources */,
 				5E13967D28F15BFE00A5FFBE /* CommonEnum.swift in Sources */,
+				5ED80C0128F7EC4400F9834A /* BottomViewController.swift in Sources */,
 				5E9383C4283C87EA00C5D383 /* TaskTableViewCell.swift in Sources */,
 				5E7618262828D9CC00BD5E69 /* Date+Extensions.swift in Sources */,
 				5EC725D228EC0427007D4703 /* BMBubbleView.swift in Sources */,

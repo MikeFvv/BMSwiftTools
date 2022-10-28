@@ -139,9 +139,9 @@ class MeViewController: UIViewController {
         createFloatButtonUI()
         createDragView()
         
-        createAdaptiveScrollViewUI()
+//        createAdaptiveScrollViewUI()
 
-//        createFixedSizeScrollViewUI()
+        createFixedSizeScrollViewUI()
     }
     
     

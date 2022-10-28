@@ -10,10 +10,10 @@ import UIKit
 import Foundation
 
 // MARK: ===================================工具类:变量宏定义=========================================
-/// 屏幕宽
-public let KScreenWidth = UIScreen.main.bounds.width
-/// 屏幕高
-public let KScreenHeight = UIScreen.main.bounds.height
+///// 屏幕宽
+//public let KScreenWidth = UIScreen.main.bounds.width
+///// 屏幕高
+//public let KScreenHeight = UIScreen.main.bounds.height
 
 
 

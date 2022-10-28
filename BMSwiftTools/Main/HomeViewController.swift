@@ -35,6 +35,18 @@ class HomeViewController: UIViewController {
         return tableView
     }()
     
+    
+    private lazy var bottomViewButton: UIButton = {
+        let instance = UIButton(type: .custom)
+        instance.backgroundColor = UIColor.green.withAlphaComponent(0.5)
+        instance.setTitle("代码创建底部视图", for: .normal)
+        instance.setTitleColor(.white, for: .normal)
+        instance.setTitleColor(UIColor.white.withAlphaComponent(0.7), for: .highlighted)
+        instance.titleLabel?.font = .systemFont(ofSize: 14, weight: .medium)
+        instance.addTarget(self, action: #selector(onBottomViewButtonClicked), for: .touchUpInside)
+        return instance
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,11 +64,25 @@ class HomeViewController: UIViewController {
         //刷新尾部
         let footer = MJRefreshAutoNormalFooter(refreshingBlock: self.loadMoreData)
         tableView.mj_footer = footer
+        
     }
+    
+    @objc func onBottomViewButtonClicked() {
+        let firstVC = BottomViewController()
+        presentBottomViewController(firstVC)
+    }
+    
     
     func createUI() {
         tableView.frame = view.bounds
         view.addSubview(tableView)
+        
+        
+        view.addSubview(bottomViewButton)
+        bottomViewButton.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
     }
     
     

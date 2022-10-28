@@ -19,7 +19,7 @@ enum ExampleProvider {
         let v2 = RadarDiffusionAnimationontroller()  // 扩散动画
         let v3 = ExampleViewController()
         let v4 = MeViewController()
-        let v5 = iPhoneSafeSizeController()
+        let v5 = MatchWCPromotionImageController()
         
         v1.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Home", image: UIImage(named: "home"), selectedImage: UIImage(named: "home_1"))
         v2.tabBarItem = ESTabBarItem.init(ExampleBouncesContentView(), title: "Find", image: UIImage(named: "find"), selectedImage: UIImage(named: "find_1"))
